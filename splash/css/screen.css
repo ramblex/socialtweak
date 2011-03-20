@@ -1,0 +1,213 @@
+/*
+ * Stylesheet for SocialTweak base
+ * Author: Alex Duller
+ * Contents:
+ *  - Global styles
+ *  - Header
+ *  - Footer
+ */
+
+/* Global styles */
+body {
+  font: 14px Helvetica, Arial, sans;
+  padding: 0;
+  margin: 0;
+  min-width: 980px;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+#header {
+  font-weight: 550;
+  height: 83px;
+  padding-bottom: 7px;
+  background: url(../images/header.png) repeat-x bottom left;
+  display: block;
+}
+
+h1 {
+  margin: 13px 0 0 50px;
+  padding: 0;
+  display: block;
+  float: left;
+  text-indent: -10000px;
+  outline: 0;
+  width: 265px;
+  height: 52px;
+  background: url(../images/Logo.png);
+}
+
+#header form {
+  width: 500px;
+  float: right;
+  margin: 5px 0 0 0;
+}
+
+#header form p {
+  float: left;
+}
+
+#header form label {
+  display: block;
+  color: white;
+  font-size: 18px;
+  letter-spacing: -1px;
+}
+
+#header form input[type=text], #header form input[type=password] {
+  width: 135px;
+  height: 23px;
+  line-height: 23px;
+  margin-right: 45px;
+  padding: 0;
+  border: 0;
+  background: white;
+}
+
+#login-btn {
+  margin-top: 8px;
+  width: 125px;
+  height: 33px;
+  background: url(../images/login-btn.png);
+  display: block;
+  padding: 0;
+  border: 0;
+  text-indent: -30000px;
+  outline: 0;
+  cursor: pointer;
+}
+
+#login-btn:hover {
+  background-position: 0 -35px;
+}
+
+#content {
+  margin-bottom: 216px;
+  position: relative;
+}
+
+#content h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Roundabout */
+#roundabout {
+  height: 318px;
+}
+
+#roundabout ul {
+  width: 524px;
+  padding-left: 0;
+  height: 318px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.roundabout-holder {
+  padding: 0;
+  height: 318px;
+}
+
+.roundabout-moveable-item {
+  height: 318px;
+  width: 524px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.roundabout-in-focus {
+  cursor: auto;
+  background: url(../images/roundabout-in-focus.png);
+}
+
+/* Footer */
+#footer {
+  min-width: 980px;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background: url(../images/footer.png) repeat-x;
+  height: 216px;
+  width: 100%;
+}
+
+#footer a {
+  color: white;
+  font-weight: bold;
+}
+
+.section {
+  padding-top: 70px;
+  float: left;
+  margin-left: 40px;
+  height: 150px;
+  width: 195px;
+}
+
+.section h3 {
+  font-weight: normal;
+  font-size: 22px;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+/* News section */
+#news {
+  margin-left: 70px;
+}
+
+#via {
+  font-size: 80%;
+}
+
+/* Social section */
+#facebook, #twitter {
+  display: block;
+  width: 63px;
+  height: 61px;
+  float: left;
+  text-indent: -10000px;
+  outline: 0;
+  margin: 5px 15px 0 0;
+}
+
+#facebook {
+  background: url(../images/facebook.png);
+}
+
+#twitter {
+  background: url(../images/twitter.png);
+}
+
+/* contact, about, terms */
+#misc {
+  background: url(../images/faded-logo.png) no-repeat 0 100px;
+}
+
+#misc ul {
+  margin: 70px 0 0 20px;
+  padding: 0;
+}
+
+#misc ul li {
+  float: left;
+  list-style: none;
+  margin: 0 20px 0 0;
+}
+
+#misc ul li a {
+  font-weight: normal;
+  font-size: 85%;
+  color: #646464;
+}

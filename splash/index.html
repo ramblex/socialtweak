@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SocialTweak</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link href="css/screen.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.roundabout.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#roundabout ul").roundabout();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <a href="/">
+        <h1>SocialTweak</h1>
+      </a>
+      <form action="/sign_in" method="post">
+        <p>
+          <label for="user[socialname]">Socialname:<label>
+          <input type="text" name="user[socialname]" />
+        </p>
+        <p>
+          <label for="user[password]">Password:<label>
+          <input type="password" name="user[password]" />
+        </p>
+        <p>
+          <input type="submit" value="LOGIN" id="login-btn" />
+        </p>
+      </form>
+    </div> <!-- end header -->
+
+    <div id="content">
+      <h2>Getting social, in a whole new way</h2>
+      <div id="roundabout">
+        <ul>
+          <li><img src="images/slides/1wel.png" alt="Welcome" /></li>
+          <li><img src="images/slides/2gamesslide.png" alt="Games" /></li>
+          <li><img src="images/slides/3videoslide.png" alt="Videos" /></li>
+          <li><img src="images/slides/4musicslide.png" alt="Music" /></li>
+          <li><img src="images/slides/5auctions.png" alt="Auctions" /></li>
+        </ul>
+      </div>
+    </div> <!-- end content -->
+
+    <div id="footer">
+      <div class="section" id="news">
+        <h3>Latest News</h3>
+        <p>We just launched the first beta</p>
+        <p id="via">via Twitter</p>
+      </div> <!-- end section -->
+      <div class="section" id="social">
+        <h3>We're social too!</h3>
+        <a href="#" id="facebook">Facebook</a>
+        <a href="#" id="twitter">Twitter</a>
+      </div> <!-- end section -->
+      <div class="section">
+        <h3>Get inside!</h3>
+        <p>Our members will be happy to invite you!</p>
+        <p><a href="#">Click here</a> and request an invite</p>
+      </div> <!-- end section -->
+      <div class="section" id="misc">
+        <ul>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">terms</a></li>
+        </ul>
+      </div> <!-- end section -->
+    </div> <!-- end footer -->
+  </body>
+</html>
