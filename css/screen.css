@@ -24,7 +24,7 @@ a:hover {
 }
 
 /* Header */
-header {
+#header {
   font-weight: 550;
   height: 75px;
   background: url(../images/header.png) repeat-x;
@@ -43,26 +43,26 @@ h1 {
   background: url(../images/Logo.png);
 }
 
-nav {
+#nav {
   float: right;
   margin: 30px 32px 0 0;
 }
 
-nav li {
+#nav li {
   display: block;
   float: left;
   list-style: none;
   margin-left: 25px;
 }
 
-nav li a {
+#nav li a {
   font-size: 23px;
   color: white;
   letter-spacing: -1px;
 }
 
 /* Footer */
-footer {
+#footer {
   display: block;
   position: fixed;
   bottom: 0;
@@ -74,7 +74,7 @@ footer {
   width: 100%;
 }
 
-footer a {
+#footer a {
   color: white;
 }
 
