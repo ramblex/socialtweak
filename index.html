@@ -9,7 +9,7 @@
       $(document).ready(function() {
         $("#open-footer").hide();
         $("#settings").click(function() {
-          $("#open-footer").slideToggle();
+          $("#open-footer").slideToggle('fast');
         });
       });
     </script>
@@ -24,9 +24,11 @@
         <li><a href="#">Favorites</a></li>
         <li><a href="#">Rewards</a></li>
       </ul>
-    </div>
+    </div> <!-- end header -->
+
     <div id="content">
-    </div>
+    </div> <!-- end content -->
+
     <div id="footer">
       <div id="closed-footer">
         <ul>
@@ -38,15 +40,19 @@
         </ul>
         <div id="points">521 <span>points</span></div>
         <a href="#" id="settings">Settings</a>
-      </div>
+      </div> <!-- end closed-footer -->
       <div id="open-footer">
         <div id="account-info">
+          <img src="images/profile-pic.png" alt="profile picture" />
+          <p>Rocking life, one day at a time</p>
+          <a href="#" id="change-status">change status</a>
+          <a href="#" id="see-profile">Go to your profile</a>
         </div>
         <ul>
           <li><a href="#">Account</a></li>
           <li><a href="#">Logout</a></li>
         </ul>
-      </div>
-    </div>
+      </div> <!-- end open-footer -->
+    </div> <!-- end footer -->
   </body>
 </html>
