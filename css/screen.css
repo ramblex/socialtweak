@@ -27,7 +27,8 @@ a:hover {
 #header {
   font-weight: 550;
   height: 75px;
-  background: url(../images/header.png) repeat-x;
+  padding-bottom: 7px;
+  background: url(../images/header.png) repeat-x bottom left;
   display: block;
 }
 
