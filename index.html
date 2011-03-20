@@ -1,0 +1,51 @@
+<!doctype>
+<html>
+  <head>
+    <title>SocialTweak</title>
+    <link href="css/screen.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#open-footer").hide();
+        $("#settings").click(function() {
+          $("#open-footer").slideToggle();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>SocialTweak</h1>
+      <nav>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Social</a></li>
+        <li><a href="#">Entertainment</a></li>
+        <li><a href="#">Favorites</a></li>
+        <li><a href="#">Rewards</a></li>
+      </nav>
+    </header>
+    <div id="content">
+    </div>
+    <footer>
+      <div id="closed-footer">
+        <ul>
+          <li><a href="#">contact</a></li>
+          <li>-</li>
+          <li><a href="#">about</a></li>
+          <li>-</li>
+          <li><a href="#">terms</a></li>
+        </ul>
+        <div id="points">521 <span>points</span></div>
+        <a href="#" id="settings">Settings</a>
+      </div>
+      <div id="open-footer">
+        <div id="account-info">
+        </div>
+        <ul>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

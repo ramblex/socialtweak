@@ -1,0 +1,143 @@
+/*
+ * Stylesheet for SocialTweak base
+ * Author: Alex Duller
+ * Contents:
+ *  - Global styles
+ *  - Header
+ *  - Footer
+ */
+
+/* Global styles */
+body {
+  font: 14px Helvetica, Arial, sans;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  font-weight: 550;
+  height: 75px;
+  background: url(../images/header.png) repeat-x;
+  display: block;
+}
+
+h1 {
+  margin: 13px 0 0 50px;
+  padding: 0;
+  display: block;
+  float: left;
+  text-indent: -10000px;
+  outline: 0;
+  width: 265px;
+  height: 52px;
+  background: url(../images/Logo.png);
+}
+
+nav {
+  float: right;
+  margin: 30px 32px 0 0;
+}
+
+nav li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin-left: 25px;
+}
+
+nav li a {
+  font-size: 23px;
+  color: white;
+  letter-spacing: -1px;
+}
+
+/* Footer */
+footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: white;
+  font-weight: 550;
+  background: url(../images/openfooter.png) repeat-x;
+  letter-spacing: -0.8px;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+}
+
+#closed-footer, #open-footer {
+  width: 420px;
+  float: right;
+  margin-right: 30px;
+}
+
+#closed-footer {
+  padding: 60px 0 0 0;
+  height: 35px;
+}
+
+/* contact, about, terms */
+#closed-footer ul {
+  float: left;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+
+#closed-footer ul li {
+  padding: 0;
+  float: left;
+  list-style: none;
+  margin: 0 3px;
+  letter-spacing: -0.7px;
+}
+
+#points, #settings {
+  display: block;
+  font-size: 23px;
+  float: left;
+}
+
+#points {
+  margin: 0 35px;
+}
+
+#points span {
+  color: #3f8545;
+}
+
+/* Open footer (when settings has been clicked) */
+#open-footer {
+  clear: both;
+  height: 105px;
+}
+
+#account-info {
+  width: 290px;
+  height: 100px;
+  float: left;
+}
+
+/* Account, Logout */
+#open-footer ul {
+  float: right;
+  margin: 5px 0 0 0;
+}
+
+#open-footer ul li {
+  list-style: none;
+  height: 25px;
+  text-align: right;
+}
