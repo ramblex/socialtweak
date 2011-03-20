@@ -9,7 +9,14 @@
       $(document).ready(function() {
         $("#open-footer").hide();
         $("#settings").click(function() {
-          $("#open-footer").slideToggle('fast');
+          $("#open-footer").slideToggle('fast', function() {
+            // Switch the footer arrow
+            if ($(this).is(':hidden')) {
+              $("#settings").css('background-image', 'url(images/footer-arrow.png)');
+            } else {
+              $("#settings").css('background-image', 'url(images/footer-arrow-down.png)');
+            }
+          });
         });
       });
     </script>

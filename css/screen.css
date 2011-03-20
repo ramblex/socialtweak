@@ -20,7 +20,7 @@ a {
 }
 
 a:hover {
-  color: #ccc;
+  text-decoration: underline;
 }
 
 /* Header */
