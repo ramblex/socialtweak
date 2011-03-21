@@ -11,6 +11,7 @@
         // Add previous and next arrows to each slide image
         $('#roundabout li').append('<div class="prev-next-links"><a href="#" class="next"></a><a href="#" class="previous"></a></div>');
 
+        // Allow dots to switch between slides
         $("#roundabout li").each(function(index, element) {
           $('<li><a href="#"></a></li>')
             .appendTo("#dots")
@@ -21,6 +22,7 @@
             });
         });
 
+        // Work out width for #dots
         $("#dots").css('width', $("#roundabout li").length * $("#dots li:first").outerWidth(true));
 
         // Whenever the slide is changed update the dots
