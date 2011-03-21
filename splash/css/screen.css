@@ -64,6 +64,8 @@ h1 {
 #header form p {
   float: left;
   margin: 0 0 0 40px;
+  width: 135px;
+  display: block;
 }
 
 #header form label {
