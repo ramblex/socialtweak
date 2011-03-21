@@ -8,7 +8,12 @@
     <script type="text/javascript" src="javascripts/jquery.roundabout.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $("#roundabout ul").roundabout();
+        $('#roundabout li').append('<div class="prev-next-links"><a href="#" class="next"></a><a href="#" class="previous"></a></div>');
+
+        $("#roundabout ul").roundabout({
+          btnNext: '.next',
+          btnPrev: '.previous'
+        });
       });
     </script>
   </head>
@@ -37,40 +42,43 @@
         <h2>Getting social, in a whole new way</h2>
         <div id="roundabout">
           <ul>
-            <li><img src="images/slides/1wel.png" alt="Welcome" width="524" height="318" /></li>
+            <li>
+              <img src="images/slides/1wel.png" alt="Welcome" width="524" height="318" />
+            </li>
             <li><img src="images/slides/2gamesslide.png" alt="Games" width="524" height="318" /></li>
-            <li><img src="images/slides/3videoslide.png" alt="Videos" width="524" height="318"  /></li>
+            <li><img src="images/slides/3videoslide.png" alt="Videos" width="524" height="318" /></li>
             <li><img src="images/slides/4musicslide.png" alt="Music" width="524" height="318" /></li>
             <li><img src="images/slides/5auctions.png" alt="Auctions" width="524" height="318" /></li>
           </ul>
         </div>
-        <p>Hello</p>
       </div> <!-- end content -->
     </div> <!-- end container -->
 
     <div id="footer">
-      <div class="section" id="news">
-        <h3>Latest News</h3>
-        <p>We just launched the first beta</p>
-        <p id="via">via Twitter</p>
-      </div> <!-- end section -->
-      <div class="section" id="social">
-        <h3>We're social too!</h3>
-        <a href="#" id="facebook">Facebook</a>
-        <a href="#" id="twitter">Twitter</a>
-      </div> <!-- end section -->
-      <div class="section">
-        <h3>Get inside!</h3>
-        <p>Our members will be happy to invite you!</p>
-        <p><a href="#">Click here</a> and request an invite</p>
-      </div> <!-- end section -->
-      <div class="section" id="misc">
-        <ul>
-          <li><a href="#">contact</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">terms</a></li>
-        </ul>
-      </div> <!-- end section -->
+      <div id="footer-content">
+        <div class="section" id="news">
+          <h3>Latest News</h3>
+          <p>We just launched the first beta</p>
+          <p id="via">via Twitter</p>
+        </div> <!-- end section -->
+        <div class="section" id="social">
+          <h3>We're social too!</h3>
+          <a href="#" id="facebook">Facebook</a>
+          <a href="#" id="twitter">Twitter</a>
+        </div> <!-- end section -->
+        <div class="section">
+          <h3>Get inside!</h3>
+          <p>Our members will be happy to invite you!</p>
+          <p><a href="#">Click here</a> and request an invite</p>
+        </div> <!-- end section -->
+        <div class="section" id="misc">
+          <ul>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">terms</a></li>
+          </ul>
+        </div> <!-- end section -->
+      </div> <!-- end footer content -->
     </div> <!-- end footer -->
   </body>
 </html>

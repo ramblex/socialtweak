@@ -104,8 +104,12 @@ h1 {
 }
 
 #content h2 {
-  text-align: center;
+  width: 844px;
+  margin: 50px auto 10px auto;
   font-size: 30px;
+  text-indent: -30000px;
+  background: url(../images/banner.png) no-repeat;
+  height: 100px;
 }
 
 /* Roundabout */
@@ -138,6 +142,36 @@ h1 {
   background: url(../images/roundabout-in-focus.png);
 }
 
+.prev-next-links {
+  display: none;
+}
+
+.roundabout-in-focus .prev-next-links {
+  display: block;
+  margin-top: -180px;
+  z-index: 2000;
+  position: relative;
+  height: 40px;
+}
+
+.previous, .next {
+  display: block;
+  width: 25px;
+  height: 40px;
+}
+
+.previous {
+  float: right;
+  background: url(../images/right.png) no-repeat;
+  margin-right: 10px;
+}
+
+.next {
+  float: left;
+  background: url(../images/left.png) no-repeat;
+  margin-left: 10px;
+}
+
 /* Footer */
 #footer {
   margin-top: -216px;
@@ -155,6 +189,11 @@ h1 {
   font-weight: bold;
 }
 
+#footer-content {
+  margin: 0 auto;
+  width: 940px;
+}
+
 .section {
   padding-top: 70px;
   float: left;
@@ -169,10 +208,6 @@ h1 {
   margin: 0;
 }
 
-/* News section */
-#news {
-  margin-left: 70px;
-}
 
 #via {
   font-size: 80%;
