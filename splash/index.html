@@ -8,6 +8,7 @@
     <script type="text/javascript" src="javascripts/jquery.roundabout.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
+        // Add previous and next arrows to each slide image
         $('#roundabout li').append('<div class="prev-next-links"><a href="#" class="next"></a><a href="#" class="previous"></a></div>');
 
         $("#roundabout ul").roundabout({
@@ -15,6 +16,7 @@
           btnPrev: '.previous',
           reflect: true
         });
+        $("#roundabout ul").after('<div id="dots"></div>');
       });
     </script>
   </head>

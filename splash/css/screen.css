@@ -58,7 +58,7 @@ h1 {
 #header form {
   width: 600px;
   float: right;
-  margin: 20px 0 0 0;
+  margin: 18px 0 0 0;
 }
 
 #header form p {
@@ -116,7 +116,6 @@ h1 {
 }
 
 #content {
-  min-height: 650px;
 }
 
 #content h2 {
