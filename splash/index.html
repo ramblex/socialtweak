@@ -11,12 +11,33 @@
         // Add previous and next arrows to each slide image
         $('#roundabout li').append('<div class="prev-next-links"><a href="#" class="next"></a><a href="#" class="previous"></a></div>');
 
+        $("#roundabout li").each(function(index, element) {
+          $('<li><a href="#"></a></li>')
+            .appendTo("#dots")
+            .click(function() {
+              $('#roundabout ul').roundabout_animateToChild(index);
+              // Selected class is handled in focus callback below
+              return false;
+            });
+        });
+
+        $("#dots").css('width', $("#roundabout li").length * $("#dots li:first").outerWidth(true));
+
+        // Whenever the slide is changed update the dots
+        $("#roundabout ul").focus(function() {
+          var selected_image = $('.roundabout-in-focus');
+          var idx = $("#roundabout ul li").index(selected_image);
+          var selected_dot = $("#dots li").get(idx);
+          $("#dots li").removeClass('selected');
+          $(selected_dot).addClass('selected');
+        });
+
         $("#roundabout ul").roundabout({
           btnNext: '.next',
           btnPrev: '.previous',
           reflect: true
         });
-        $("#roundabout ul").after('<div id="dots"></div>');
+
       });
     </script>
   </head>
@@ -57,7 +78,8 @@
             <li><img src="images/slides/4musicslide.png" alt="Music" width="524" height="318" /></li>
             <li><img src="images/slides/5auctions.png" alt="Auctions" width="524" height="318" /></li>
           </ul>
-        </div>
+        </div> <!-- end roundabout -->
+        <div id="dots"></div>
       </div> <!-- end content -->
     </div> <!-- end container -->
 

@@ -8,11 +8,11 @@
  */
 
 /* Sticky footer */
-html, body, #container {
+html, body {
   height: 100%;
 }
 
-body > #container {
+#container {
   height: auto;
   min-height: 100%;
 }
@@ -116,6 +116,8 @@ h1 {
 }
 
 #content {
+  overflow: auto;
+  padding-bottom: 216px;
 }
 
 #content h2 {
@@ -154,7 +156,6 @@ h1 {
 
 .roundabout-in-focus {
   cursor: auto;
-  background: url(../images/roundabout-in-focus.png);
 }
 
 .prev-next-links {
@@ -175,23 +176,47 @@ h1 {
   height: 40px;
 }
 
-.previous {
+.next {
   float: right;
   background: url(../images/right.png) no-repeat;
   margin-right: 10px;
 }
 
-.next {
+.previous {
   float: left;
   background: url(../images/left.png) no-repeat;
   margin-left: 10px;
+}
+
+/* Dots below roundabout */
+#dots {
+  height: 25px;
+  margin: 20px auto;
+  clear: both;
+}
+
+#dots li {
+  float: left;
+  list-style: none;
+  width: 16px;
+  margin: 0 5px;
+}
+
+#dots li a {
+  width: 16px;
+  height: 16px;
+  display: block;
+  background: url(../images/dot.png) no-repeat;
+}
+
+#dots li a:hover, #dots li.selected a {
+  background-position: 0 -16px;
 }
 
 /* Footer */
 #footer {
   margin-top: -216px;
   height: 216px;
-  z-index: 10;
   min-width: 980px;
   clear: both;
   position: relative;
