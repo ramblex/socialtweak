@@ -56,13 +56,14 @@ h1 {
 }
 
 #header form {
-  width: 500px;
+  width: 600px;
   float: right;
-  margin: 5px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 #header form p {
   float: left;
+  margin: 0 0 0 40px;
 }
 
 #header form label {
@@ -70,16 +71,31 @@ h1 {
   color: white;
   font-size: 18px;
   letter-spacing: -1px;
+  width: 135px;
 }
 
 #header form input[type=text], #header form input[type=password] {
   width: 135px;
-  height: 23px;
-  line-height: 23px;
-  margin-right: 45px;
-  padding: 0;
+  height: 19px;
+  line-height: 19px;
+  margin: 0 45px 0 0;
+  padding: 2px 0;
   border: 0;
+  font-size: 12px;
   background: white;
+}
+
+#form-links {
+  float: right;
+  clear: right;
+  margin: 1px 100px 0 0;
+}
+
+#form-links a {
+  font-size: 11.5px;
+  color: white;
+  margin-left: 48px;
+  font-weight: 580;
 }
 
 #login-btn {
