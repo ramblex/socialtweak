@@ -7,6 +7,16 @@
  *  - Footer
  */
 
+/* Sticky footer */
+html, body, #container {
+  height: 100%;
+}
+
+body > #container {
+  height: auto;
+  min-height: 100%;
+}
+
 /* Global styles */
 body {
   font: 14px Helvetica, Arial, sans;
@@ -90,8 +100,7 @@ h1 {
 }
 
 #content {
-  margin-bottom: 216px;
-  position: relative;
+  min-height: 650px;
 }
 
 #content h2 {
@@ -131,15 +140,14 @@ h1 {
 
 /* Footer */
 #footer {
+  margin-top: -230px;
+  height: 216px;
+  z-index: 10;
   min-width: 980px;
-  display: block;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  clear: both;
+  position: relative;
   color: white;
   background: url(../images/footer.png) repeat-x;
-  height: 216px;
-  width: 100%;
 }
 
 #footer a {
@@ -151,7 +159,6 @@ h1 {
   padding-top: 70px;
   float: left;
   margin-left: 40px;
-  height: 150px;
   width: 195px;
 }
 
