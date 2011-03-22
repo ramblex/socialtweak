@@ -11,35 +11,37 @@
     <script type="text/javascript" src="javascripts/jquery.roundabout.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        // Add previous and next arrows to each slide image
-        $('#roundabout li').append('<div class="prev-next-links"><a href="#" class="next"></a><a href="#" class="previous"></a></div>');
 
         // Allow dots to switch between slides
         $("#roundabout li").each(function(index, element) {
           $('<li><a href="#"></a></li>')
             .appendTo("#dots")
             .click(function() {
+              // Subtract 1 since there is a previous arrow
               $('#roundabout ul').roundabout_animateToChild(index);
               // Selected class is handled in focus callback below
               return false;
             });
         });
 
+        $("#dots").prepend('<li id="previous"><a href="#"></a></li>');
+        $("#dots").append('<li id="next"><a href="#"></a></li>');
+
         // Work out width for #dots
-        $("#dots").css('width', $("#roundabout li").length * $("#dots li:first").outerWidth(true));
+        $("#dots").css('width', $("#dots li").length * $("#dots li:first").outerWidth(true));
 
         // Whenever the slide is changed update the dots
         $("#roundabout ul").focus(function() {
           var selected_image = $('.roundabout-in-focus');
           var idx = $("#roundabout ul li").index(selected_image);
-          var selected_dot = $("#dots li").get(idx);
+          var selected_dot = $("#dots li").get(idx + 1);
           $("#dots li").removeClass('selected');
           $(selected_dot).addClass('selected');
         });
 
         $("#roundabout ul").roundabout({
-          btnNext: '.next',
-          btnPrev: '.previous',
+          btnNext: '#next',
+          btnPrev: '#previous',
           reflect: true
         });
 

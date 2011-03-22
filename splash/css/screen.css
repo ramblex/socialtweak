@@ -167,37 +167,6 @@ h1 {
 .roundabout-in-focus {
   cursor: auto;
 }
-
-.prev-next-links {
-  display: none;
-}
-
-.roundabout-in-focus .prev-next-links {
-  display: block;
-  margin-top: -180px;
-  z-index: 2000;
-  position: relative;
-  height: 40px;
-}
-
-.previous, .next {
-  display: block;
-  width: 25px;
-  height: 40px;
-}
-
-.next {
-  float: right;
-  background: url(../images/right.png) no-repeat;
-  margin-right: 10px;
-}
-
-.previous {
-  float: left;
-  background: url(../images/left.png) no-repeat;
-  margin-left: 10px;
-}
-
 /* Dots below roundabout */
 #dots {
   height: 25px;
@@ -222,6 +191,15 @@ h1 {
 #dots li a:hover, #dots li.selected a {
   background-position: 0 -16px;
 }
+
+#next a {
+  background: url(../images/right-small.png) no-repeat top right !important;
+}
+
+#previous a {
+  background: url(../images/left-small.png) no-repeat !important;
+}
+
 
 /* Footer */
 #footer {
