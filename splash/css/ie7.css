@@ -4,6 +4,19 @@
  */
 
 
-#header form input[type=text], #header form input[type=password] {
+#header form input {
   margin: 0 0 0 -40px;
+}
+
+#header form input[type=submit] {
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+
+#misc {
+  height: 150px;
+}
+
+#misc ul {
+  margin-top: 140px;
 }

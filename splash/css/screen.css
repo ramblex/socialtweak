@@ -53,6 +53,7 @@ h1 {
   width: 265px;
   height: 52px;
   background: url(../images/Logo.png);
+  cursor: pointer;
 }
 
 #header form {
@@ -89,15 +90,21 @@ h1 {
 }
 
 #form-links {
-  float: right;
-  clear: right;
-  margin: 1px 100px 0 0;
+  clear: both;
+  margin-left: 215px;
+}
+
+#form-links span {
+  width: 130px;
+  margin-right: 40px;
+  display: block;
+  float: left;
+  text-align: center;
 }
 
 #form-links a {
   font-size: 11.5px;
   color: white;
-  margin-left: 48px;
   font-weight: 580;
 }
 
