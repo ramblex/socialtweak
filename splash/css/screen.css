@@ -1,5 +1,5 @@
 /*
- * Stylesheet for SocialTweak base
+ * Stylesheet for SocialTweak splash
  * Author: Alex Duller
  * Contents:
  *  - Global styles
@@ -64,6 +64,7 @@ h1 {
 #header form p {
   float: left;
   margin: 0 0 0 40px;
+  padding: 0;
   width: 135px;
   display: block;
 }
@@ -77,10 +78,10 @@ h1 {
 }
 
 #header form input[type=text], #header form input[type=password] {
+  display: block;
   width: 135px;
   height: 19px;
   line-height: 19px;
-  margin: 0 45px 0 0;
   padding: 2px 0;
   border: 0;
   font-size: 12px;
@@ -241,6 +242,10 @@ h1 {
   float: left;
   margin-left: 40px;
   width: 195px;
+}
+
+.section p {
+  margin: 7px 0 0 0;
 }
 
 .section h3 {

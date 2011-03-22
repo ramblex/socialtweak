@@ -1,0 +1,9 @@
+/*
+ * Stylesheet for SocialTweak splash
+ * This is only called in IE7
+ */
+
+
+#header form input[type=text], #header form input[type=password] {
+  margin: 0 0 0 -40px;
+}
