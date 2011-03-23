@@ -91,7 +91,7 @@ h1 {
 #slidedeck {
   clear: left;
   width: 915px;
-  height: 360px;
+  height: 361px;
   background: url(../images/slidedeck.png) no-repeat;
   padding: 1px 10px 0 15px;
   margin: 0 auto;
@@ -234,7 +234,7 @@ h1 {
   margin-top: 10px;
 }
 
-/* Account, Logout */
+/* Account, Logout, Choose background */
 #open-footer ul {
   float: right;
   margin: 5px 0 0 0;
@@ -244,4 +244,17 @@ h1 {
   list-style: none;
   height: 25px;
   text-align: right;
+}
+
+#choose-background {
+  height: 20px;
+  margin-top: -5px;
+}
+
+#open-footer ul li img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  float: right;
+  border: 0;
 }

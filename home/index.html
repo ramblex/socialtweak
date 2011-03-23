@@ -20,6 +20,16 @@
           });
         });
         $("#slidedeck dl").slidedeck();
+
+        // Background chooser
+        $("#choose-background a").click(function() {
+          var name = $(this).attr('name');
+          var options = "";
+          if (name == "white") {
+            options += " no-repeat";
+          }
+          $('body').css('background-image', 'url(images/backgrounds/'+$(this).attr('name')+'.png)' + options);
+        });
       });
     </script>
   </head>
@@ -83,6 +93,12 @@
         <ul>
           <li><a href="#">Account</a></li>
           <li><a href="#">Logout</a></li>
+          <li>Choose a background:</li>
+          <li id="choose-background">
+            <a href="#" name="grass"><img src="images/select-grass.png" alt="Grass background" /></a>
+            <a href="#" name="water"><img src="images/select-water.png" alt="Water background" /></a>
+            <a href="#" name="wood"><img src="images/select-wood.png" alt="Wood background" /></a>
+          </li>
         </ul>
       </div> <!-- end open-footer -->
     </div> <!-- end footer -->
