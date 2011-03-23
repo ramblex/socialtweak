@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <link href="css/screen.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/slidedeck.jquery.lite.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
         $("#open-footer").hide();
@@ -18,6 +19,7 @@
             }
           });
         });
+        $("#slidedeck dl").slidedeck();
       });
     </script>
   </head>
@@ -36,6 +38,27 @@
     </div> <!-- end header -->
 
     <div id="content">
+      <ul id="thumbnails">
+        <li><img src="images/thumb1.png" alt="Box 1 text" /></li>
+        <li><img src="images/thumb2.png" alt="Box 2 text" /></li>
+        <li><img src="images/thumb3.png" alt="Box 3 text" /></li>
+      </ul>
+
+      <div id="slidedeck">
+        <dl>
+          <dt>Getting Started</dt>
+          <dd>Getting started content</dd>
+
+          <dt>Featured</dt>
+          <dd>Featured content</dd>
+
+          <dt>Recommended</dt>
+          <dd>Recommended content</dd>
+
+          <dt>Friends feed</dt>
+          <dd>Friends feed content</dd>
+        </dl>
+      </div> <!-- end slidedeck -->
     </div> <!-- end content -->
 
     <div id="footer">

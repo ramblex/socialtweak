@@ -4,6 +4,9 @@
  * Contents:
  *  - Global styles
  *  - Header
+ *  - Content
+ *    - Thumbnails
+ *    - Slidedeck
  *  - Footer
  */
 
@@ -63,8 +66,78 @@ h1 {
   letter-spacing: -1px;
 }
 
+/* Content */
+#content {
+  padding-bottom: 70px;
+}
+
+#thumbnails {
+  width: 940px;
+  margin: 20px auto;
+  height: 200px;
+  padding: 0;
+}
+
+#thumbnails li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  height: 200px;
+  float: left;
+  margin: 0 5px;
+}
+
+#slidedeck {
+  clear: left;
+  width: 915px;
+  height: 360px;
+  background: url(../images/slidedeck.png) no-repeat;
+  padding: 1px 10px 0 15px;
+  margin: 0 auto;
+}
+
+#slidedeck dl {
+  height: 330px;
+  position: relative;
+}
+
+/* Spine */
+#slidedeck dt {
+  border-bottom: 5px solid #1d1d1d;
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  background: url(../images/spine.png) 0 0;
+  position: relative;
+  color: white;
+  padding: 0 20px;
+}
+
+#slidedeck dt:hover, #slidedeck dt.active {
+  background-position: 0 -50px;
+}
+
+
+#slidedeck dd {
+  background: white;
+  overflow: hidden;
+  border-right: 5px solid #1d1d1d;
+  border-left: 1px solid #1d1d1d;
+  border-top: 1px solid #1d1d1d;
+  border-bottom: 1px solid #1d1d1d;
+  padding: 10px;
+}
+
+#slidedeck .index {
+  font-size: 23px;
+  color: #191919;
+}
+
 /* Footer */
 #footer {
+  z-index: 3000;
   display: block;
   position: fixed;
   bottom: 0;
