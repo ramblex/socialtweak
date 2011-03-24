@@ -35,12 +35,15 @@
         });
 
         $("#nav a").click(function() {
-          $('#content').html('Loading...');
-          var partial = "_"+$(this).html().toLowerCase()+'.html';
+          $('#content').html('<div id="loading">Loading...</div>');
+          var partial = $(this).attr('href')  + ' #content';
+          $('#nav a').removeClass('selected');
+          $(this).addClass('selected');
           $('#content').load(partial, function(respons, status, xhr) {
             if (status == 'error') {
               alert(xhr.status + ": " + xhr.statusText);
             }
+            $("#slidedeck dl ").slidedeck();
           });
           return false;
         });
@@ -53,7 +56,7 @@
         <h1>SocialTweak</h1>
       </a>
       <ul id="nav">
-        <li><a href="#">Home</a></li>
+        <li><a href="/" class="selected">Home</a></li>
         <li><a href="#">Social</a></li>
         <li><a href="/entertainment.html">Entertainment</a></li>
         <li><a href="#">Favorites</a></li>

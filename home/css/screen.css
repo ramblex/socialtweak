@@ -8,6 +8,7 @@
  *    - Thumbnails
  *    - Slidedeck
  *  - Footer
+ *  - Loading
  */
 
 /* Global styles */
@@ -23,7 +24,7 @@ a {
   outline: 0;
 }
 
-a:hover {
+a:hover, a.selected {
   text-decoration: underline;
 }
 
@@ -256,4 +257,14 @@ h1 {
   display: block;
   float: right;
   border: 0;
+}
+
+/* Loading */
+#loading {
+  background: url(../images/ajax-loader.gif) no-repeat;
+  width: 200px;
+  height: 32px;
+  margin: 30px auto;
+  line-height: 32px;
+  text-align: center;
 }
