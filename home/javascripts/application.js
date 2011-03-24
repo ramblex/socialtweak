@@ -14,7 +14,6 @@ $(document).ready(function() {
   }
 
   $.history.init(function(page) {
-    $('#content').prepend('<div id="loading">Loading...</div>');
     $('#content').load(page + ' #content', function() {
       init_content(page);
     });
@@ -23,6 +22,7 @@ $(document).ready(function() {
   $("#nav a").click(function() {
     var url = $(this).attr('href');
     url = url.replace(/^.*#/, '');
+    $('#content').prepend('<div id="loading">Loading...</div>');
     $.history.load(url);
     return false;
   });
