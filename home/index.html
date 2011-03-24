@@ -33,6 +33,17 @@
           }
           $('body').css('background-image', 'url(images/backgrounds/'+$(this).attr('name')+'.png)' + options);
         });
+
+        $("#nav a").click(function() {
+          $('#content').html('Loading...');
+          var partial = "_"+$(this).html().toLowerCase()+'.html';
+          $('#content').load(partial, function(respons, status, xhr) {
+            if (status == 'error') {
+              alert(xhr.status + ": " + xhr.statusText);
+            }
+          });
+          return false;
+        });
       });
     </script>
   </head>
@@ -44,7 +55,7 @@
       <ul id="nav">
         <li><a href="#">Home</a></li>
         <li><a href="#">Social</a></li>
-        <li><a href="#">Entertainment</a></li>
+        <li><a href="/entertainment.html">Entertainment</a></li>
         <li><a href="#">Favorites</a></li>
         <li><a href="#">Rewards</a></li>
       </ul>
