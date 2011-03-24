@@ -1,31 +1,86 @@
-<!--
-  Partial html to load inside home page content div.
-  Ideally this would be a partial and would be loaded inside the base layout
-  on the server side so that the site works without javascript.
--->
+<!doctype html>
+<html>
+  <head>
+    <title>SocialTweak</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link href="css/screen.css" rel="stylesheet" type="text/css" />
+    <!--[if IE 7]>
+      <link href="css/ie7.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/slidedeck.jquery.lite.js"></script>
+    <script type="text/javascript" src="javascripts/application.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <a href="/">
+        <h1>SocialTweak</h1>
+      </a>
+      <ul id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Social</a></li>
+        <li><a href="entertainment.html" class="selected">Entertainment</a></li>
+        <li><a href="#">Favorites</a></li>
+        <li><a href="#">Rewards</a></li>
+      </ul>
+    </div> <!-- end header -->
 
-<div id="content">
+    <div id="content">
 
-  <ul id="thumbnails">
-    <li><a href="#"><img src="images/entertainment/thumb1.png" alt="Box 1 text" /></a></li>
-    <li><a href="#"><img src="images/entertainment/thumb2.png" alt="Box 2 text" /></a></li>
-    <li><a href="#"><img src="images/entertainment/thumb3.png" alt="Box 3 text" /></a></li>
-  </ul>
+      <ul id="thumbnails">
+        <li><a href="#"><img src="images/entertainment/thumb1.png" alt="Box 1 text" /></a></li>
+        <li><a href="#"><img src="images/entertainment/thumb2.png" alt="Box 2 text" /></a></li>
+        <li><a href="#"><img src="images/entertainment/thumb3.png" alt="Box 3 text" /></a></li>
+      </ul>
 
-  <div id="slidedeck">
-    <dl>
-      <dt>Earn Points</dt>
-      <dd>Getting started content</dd>
+      <div id="slidedeck">
+        <dl>
+          <dt>Earn Points</dt>
+          <dd>Getting started content</dd>
 
-      <dt>Featured Videos</dt>
-      <dd>Featured content</dd>
+          <dt>Featured Videos</dt>
+          <dd>Featured content</dd>
 
-      <dt>Featured Songs</dt>
-      <dd>Recommended content</dd>
+          <dt>Featured Songs</dt>
+          <dd>Recommended content</dd>
 
-      <dt>Featured Games</dt>
-      <dd>Friends feed content</dd>
-    </dl>
-  </div> <!-- end slidedeck -->
+          <dt>Featured Games</dt>
+          <dd>Friends feed content</dd>
+        </dl>
+      </div> <!-- end slidedeck -->
 
-</div> <!-- end content -->
+    </div> <!-- end content -->
+
+    <div id="footer">
+      <div id="closed-footer">
+        <ul>
+          <li><a href="#">contact</a></li>
+          <li>-</li>
+          <li><a href="#">about</a></li>
+          <li>-</li>
+          <li><a href="#">terms</a></li>
+        </ul>
+        <div id="points">521 <span>points</span></div>
+        <a href="#" id="settings">Settings</a>
+      </div> <!-- end closed-footer -->
+      <div id="open-footer">
+        <div id="account-info">
+          <img src="images/profile-pic.png" alt="profile picture" />
+          <p>Rocking life, one day at a time</p>
+          <a href="#" id="change-status">change status</a>
+          <a href="#" id="see-profile">Go to your profile</a>
+        </div>
+        <ul>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Logout</a></li>
+          <li>Choose a background:</li>
+          <li id="choose-background">
+            <a href="#" name="grass"><img src="images/select-grass.png" alt="Grass background" /></a>
+            <a href="#" name="water"><img src="images/select-water.png" alt="Water background" /></a>
+            <a href="#" name="wood"><img src="images/select-wood.png" alt="Wood background" /></a>
+          </li>
+        </ul>
+      </div> <!-- end open-footer -->
+    </div> <!-- end footer -->
+  </body>
+</html>

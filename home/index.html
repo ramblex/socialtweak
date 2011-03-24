@@ -9,46 +9,8 @@
     <![endif]-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/slidedeck.jquery.lite.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $("#open-footer").hide();
-        $("#settings").click(function() {
-          $("#open-footer").slideToggle('fast', function() {
-            // Switch the footer arrow
-            if ($(this).is(':hidden')) {
-              $("#settings").css('background-image', 'url(images/footer-arrow.png)');
-            } else {
-              $("#settings").css('background-image', 'url(images/footer-arrow-down.png)');
-            }
-          });
-        });
-        $("#slidedeck dl").slidedeck();
-
-        // Background chooser
-        $("#choose-background a").click(function() {
-          var name = $(this).attr('name');
-          var options = "";
-          if (name == "white") {
-            options += " no-repeat";
-          }
-          $('body').css('background-image', 'url(images/backgrounds/'+$(this).attr('name')+'.png)' + options);
-        });
-
-        $("#nav a").click(function() {
-          $('#content').html('<div id="loading">Loading...</div>');
-          var partial = $(this).attr('href')  + ' #content';
-          $('#nav a').removeClass('selected');
-          $(this).addClass('selected');
-          $('#content').load(partial, function(respons, status, xhr) {
-            if (status == 'error') {
-              alert(xhr.status + ": " + xhr.statusText);
-            }
-            $("#slidedeck dl ").slidedeck();
-          });
-          return false;
-        });
-      });
-    </script>
+    <script type="text/javascript" src="javascripts/jquery.history.js"></script>
+    <script type="text/javascript" src="javascripts/application.js"></script>
   </head>
   <body>
     <div id="header">
@@ -56,9 +18,9 @@
         <h1>SocialTweak</h1>
       </a>
       <ul id="nav">
-        <li><a href="/" class="selected">Home</a></li>
+        <li><a href="index.html" class="selected">Home</a></li>
         <li><a href="#">Social</a></li>
-        <li><a href="/entertainment.html">Entertainment</a></li>
+        <li><a href="entertainment.html">Entertainment</a></li>
         <li><a href="#">Favorites</a></li>
         <li><a href="#">Rewards</a></li>
       </ul>

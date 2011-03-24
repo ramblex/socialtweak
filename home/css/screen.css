@@ -110,7 +110,7 @@ h1 {
   height: 50px;
   line-height: 50px;
   display: block;
-  background: url(../images/spine.png) 0 0;
+  background: url(../images/spine.png) no-repeat;
   position: relative;
   color: white;
   padding: 0 20px;
