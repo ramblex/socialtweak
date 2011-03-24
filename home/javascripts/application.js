@@ -14,15 +14,14 @@ $(document).ready(function() {
   }
 
   $.history.init(function(page) {
-    $('#content').load(page + ' #content', function() {
+    $('#content').hide().load(page + ' #content', function() {
       init_content(page);
-    });
+    }).fadeIn('slow');
   });
 
   $("#nav a").click(function() {
     var url = $(this).attr('href');
     url = url.replace(/^.*#/, '');
-    $('#content').prepend('<div id="loading">Loading...</div>');
     $.history.load(url);
     return false;
   });
