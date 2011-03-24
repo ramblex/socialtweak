@@ -92,9 +92,9 @@ h1 {
 #slidedeck {
   clear: left;
   width: 915px;
-  height: 361px;
-  background: url(../images/slidedeck.png) no-repeat;
-  padding: 1px 10px 0 15px;
+  height: 431px;
+  background: url(../images/frame.png) no-repeat;
+  padding: 1px 90px 0 95px;
   margin: 0 auto;
 }
 
