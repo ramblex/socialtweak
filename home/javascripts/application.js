@@ -22,7 +22,9 @@ $(document).ready(function() {
   $("#nav a").click(function() {
     var url = $(this).attr('href');
     url = url.replace(/^.*#/, '');
+    $('#content').prepend('<div id="loading">Loading...</div>');
     $.history.load(url);
+    $('#loading').fadeOut();
     return false;
   });
 
