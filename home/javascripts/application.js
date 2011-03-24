@@ -14,7 +14,7 @@ $(document).ready(function() {
   }
 
   $.history.init(function(page) {
-    $('#content').html('<div id="loading">Loading...</div>');
+    $('#content').prepend('<div id="loading">Loading...</div>');
     $('#content').load(page + ' #content', function() {
       init_content(page);
     });
