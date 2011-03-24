@@ -36,6 +36,7 @@ $(document).ready(function() {
       } else {
         $("#settings").css('background-image', 'url(images/footer-arrow-down.png)');
       }
+      return false;
     });
   });
 
@@ -47,5 +48,6 @@ $(document).ready(function() {
       options += " no-repeat";
     }
     $('body').css('background-image', 'url(images/backgrounds/'+$(this).attr('name')+'.png)' + options);
+    return false;
   });
 });
