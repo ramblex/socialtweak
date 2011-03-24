@@ -36,8 +36,8 @@ $(document).ready(function() {
       } else {
         $("#settings").css('background-image', 'url(images/footer-arrow-down.png)');
       }
-      return false;
     });
+    return false;
   });
 
   // Background chooser
