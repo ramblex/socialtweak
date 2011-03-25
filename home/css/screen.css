@@ -73,7 +73,64 @@ h1 {
 
 /* Content */
 #content {
-  padding-bottom: 70px;
+  padding-bottom: 30px;
+}
+
+#social-profile {
+  width: 740px;
+  margin: 20px auto 30px auto;
+  height: 220px;
+}
+
+#social-profile .image {
+  width: 198px;
+  height: 192px;
+  padding: 12px;
+  background: url(../images/profile.png) -15px -17px;
+  float: left;
+}
+
+#social-profile .username {
+  width: 404px;
+  height: 75px;
+  line-height: 75px;
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  background: url(../images/usernamecontainer.png);
+  margin: 0 0 0 222px;
+  padding:  0 0 0 10px;
+}
+
+#social-profile .status {
+  background: url(../images/statuscontainer.png) 0 -20px;
+  font-size: 23px;
+  font-weight: 550;
+  color: white;
+  height: 70px;
+  margin: 15px 0 0 222px;
+  padding: 10px 17px 10px 10px;
+}
+
+#social-profile .status p {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+}
+
+#social-profile .links {
+  font-size: 14px;
+  float: right;
+}
+
+#social-profile .links li {
+  float: left;
+  list-style: none;
+  margin-left: 5px;
+}
+
+#social-profile .links li a {
+  color: white;
 }
 
 #thumbnails {
