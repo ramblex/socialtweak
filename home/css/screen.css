@@ -79,37 +79,38 @@ h1 {
 #social-profile {
   width: 740px;
   margin: 20px auto 30px auto;
-  height: 220px;
+  height: 215px;
+  padding: 1px; /* Other margins won't work without this */
 }
 
 #social-profile .image-container {
-  width: 198px;
-  height: 192px;
-  padding: 12px;
-  background: url(../images/profile.png) -15px -17px;
+  width: 200px;
+  height: 193px;
+  padding: 12px 10px 10px 12px;
+  background: url(../images/profile-bg.png);
   float: left;
 }
 
 #social-profile .username {
-  width: 404px;
-  height: 75px;
-  line-height: 75px;
+  background: url(../images/usernamecontainer.png) no-repeat;
+  width: 390px;
+  height: 50px;
+  line-height: 50px;
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 26px;
-  background: url(../images/usernamecontainer.png);
-  margin: 0 0 0 222px;
   padding:  0 0 0 10px;
+  margin: 20px 0 0 221px;
 }
 
 #social-profile .status {
-  background: url(../images/statuscontainer.png) 0 -20px;
+  background: url(../images/statuscontainer.png) no-repeat;
+  height: 60px;
   font-size: 23px;
   font-weight: 550;
   color: white;
-  height: 70px;
-  margin: 15px 0 0 222px;
-  padding: 10px 17px 10px 10px;
+  padding: 15px 17px 15px 15px;
+  margin: 30px 0 0 221px;
 }
 
 #social-profile .status p {
