@@ -41,6 +41,14 @@ $(document).ready(function() {
     return false;
   });
 
+  // Progress bar
+  function set_progress(percentage) {
+    var total_width = 254;
+    $("#current-progress").width((percentage / 100) * total_width);
+  }
+
+  set_progress(70);
+
   // Background chooser
   $("#choose-background a").click(function() {
     var name = $(this).attr('name');

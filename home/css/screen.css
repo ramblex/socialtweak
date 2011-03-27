@@ -215,7 +215,7 @@ h1 {
   color: white;
 }
 
-#closed-footer, #open-footer {
+#closed-footer, #right-open-footer {
   width: 420px;
   float: right;
   margin-right: 30px;
@@ -251,8 +251,8 @@ h1 {
   margin: 0 25px;
 }
 
-#points span, a#change-status {
-  color: #3f8545;
+#points span, .highlight {
+  color: #3f8545 !important;
 }
 
 #settings {
@@ -265,11 +265,35 @@ h1 {
 #open-footer {
   clear: both;
   height: 105px;
+  margin-left: 30px;
+}
+
+#progress {
+  float: left;
+  width: 260px;
+  text-align: center;
+}
+
+#progress p {
+  margin: 5px 0;
+}
+
+#progress-bar {
+  width: 254px;
+  height: 26px;
+  background: url(../images/progress-bar-bg.png) no-repeat;
+  padding: 2px;
+}
+
+#current-progress {
+  width: 50px;
+  height: 25px;
+  background: #3f8545;
 }
 
 #account-info {
   width: 200px;
-  height: 100px;
+  height: 95px;
   margin-top: 10px;
   float: left;
 }
@@ -321,7 +345,7 @@ h1 {
   border: 0;
 }
 
-/* Loading */
+/* Show a spinning image when loading a new page using ajax */
 #loading {
   background: url(../images/ajax-loader.gif) no-repeat;
   width: 200px;
