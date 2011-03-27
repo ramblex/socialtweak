@@ -25,7 +25,7 @@ $(document).ready(function() {
   $.history.init(function(page) {
     $('#content').hide().load(page + ' #content', function() {
       init_content(page);
-    }).fadeIn('slow');
+    }).fadeIn(300);
   });
 
 
