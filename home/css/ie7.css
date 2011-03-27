@@ -5,3 +5,11 @@
 #open-footer ul li {
   width: 200px;
 }
+
+.button-block li a {
+  font-size: 12px !important;
+}
+
+#right-col h2 {
+  font-size: 22px;
+}
