@@ -207,7 +207,7 @@ h1 {
 
 #slidedeck dd {
   background: white;
-  overflow: hidden;
+  overflow: auto;
   border-right: 5px solid #1d1d1d;
   border-left: 1px solid #1d1d1d;
   border-top: 1px solid #1d1d1d;
