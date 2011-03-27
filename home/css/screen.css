@@ -304,11 +304,25 @@ h1 {
   font-weight: bold;
 }
 
-/* Games and videos pages */
 #games, #videos {
   margin-top: 50px;
 }
 
+/* Games */
+#current-game {
+  margin-top: 70px;
+  height: 370px;
+  background: url(../images/current-game.png) repeat-x;
+}
+
+#game {
+  width: 640px;
+  margin: 0 auto;
+  height: 370px;
+  background: gray;
+}
+
+/* Videos */
 .video {
   float: left;
   width: 200px;
