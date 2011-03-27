@@ -32,6 +32,28 @@ a:hover, a.selected {
   text-decoration: underline;
 }
 
+/* Clearfix */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
 /* Header */
 #header {
   font-weight: 550;
@@ -76,6 +98,7 @@ h1 {
   padding-bottom: 30px;
 }
 
+/* Social page */
 #social-profile {
   width: 740px;
   margin: 20px auto 30px auto;
@@ -151,7 +174,7 @@ h1 {
   margin: 0 5px;
 }
 
-#slidedeck {
+#slidedeck, .frame {
   clear: left;
   width: 915px;
   height: 431px;
@@ -195,6 +218,141 @@ h1 {
 #slidedeck .index {
   font-size: 23px;
   color: #191919;
+}
+
+/* Used for games and videos inner content */
+.frame {
+  height: 50px;
+}
+
+.frame .content {
+  padding: 1px 30px;
+  background: url(../images/frame-bg.png) repeat-y;
+  margin: 35px -10px 0 -15px;
+  min-height: 150px; /* Without this the .frame and .frame .footer backgrounds would collide */
+  width: 940px;
+}
+
+/* Used for titles inside a frame */
+.frame .content h2 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+}
+
+#left-col {
+  width: 710px;
+  float: left;
+  border-right: 1px solid black;
+  min-height: 150px;
+}
+
+#right-col {
+  width: 145px;
+  float: left;
+  padding-left: 20px;
+}
+
+#right-col h2 {
+  text-align: center;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+#right-col img {
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* This essentially moves the bottom of the frame background to the correct place */
+.frame .footer {
+  margin: -100px 0 30px -95px;
+  background: url(../images/frame.png) no-repeat left bottom;
+  height: 200px;
+  width: 1100px;
+}
+
+.button-block {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  height: 30px;
+}
+
+.button-block li {
+  float: left;
+  margin-right: 15px;
+  background: url(../images/button-block.png) no-repeat;
+  height: 30px;
+  padding-left: 10px;
+  margin-right: 20px;
+}
+
+.button-block a {
+  display: block;
+  height: 30px;
+  line-height: 31px;
+  padding-right: 10px;
+  color: white;
+  margin-right: -10px;
+  font-size: 11.5px;
+  background: url(../images/button-block.png) no-repeat top right;
+  font-weight: bold;
+}
+
+/* Games and videos pages */
+#games, #videos {
+  margin-top: 50px;
+}
+
+.video {
+  float: left;
+  width: 200px;
+  margin: 20px 10px;
+  height: 170px;
+}
+
+.video img {
+  width: 100%;
+  height: 130px;
+}
+
+.video a {
+  color: black;
+}
+
+#sponsored {
+  background: black;
+  height: 190px;
+  width: 660px;
+  margin-top: 10px;
+}
+
+#sponsored-title {
+  width: 660px;
+  clear: both;
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+#sponsored .video {
+  margin-bottom: 0;
+}
+
+#sponsored .video a {
+  color: white;
+}
+
+#sponsored .video h2 {
+  font-weight: normal;
 }
 
 /* Footer */
@@ -263,6 +421,7 @@ h1 {
 
 /* Open footer (when settings has been clicked) */
 #open-footer {
+  min-width: 730px;
   clear: both;
   height: 105px;
   margin-left: 30px;

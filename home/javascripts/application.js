@@ -4,6 +4,15 @@ $(document).ready(function() {
 
   // Javascript that affects #content
   function init_content(page) {
+    $("#nav a, #thumbnails a").click(function() {
+      var url = $(this).attr('href');
+      url = url.replace(/^.*#/, '');
+      $('#content').prepend('<div id="loading">Loading...</div>');
+      $.history.load(url);
+      $('#loading').fadeOut();
+      return false;
+    });
+
     $("#slidedeck dl").slidedeck();
 
     // Highlight the correct link
@@ -19,14 +28,6 @@ $(document).ready(function() {
     }).fadeIn('slow');
   });
 
-  $("#nav a").click(function() {
-    var url = $(this).attr('href');
-    url = url.replace(/^.*#/, '');
-    $('#content').prepend('<div id="loading">Loading...</div>');
-    $.history.load(url);
-    $('#loading').fadeOut();
-    return false;
-  });
 
   $("#open-footer").hide();
   $("#settings").click(function() {
