@@ -6,10 +6,23 @@
   width: 200px;
 }
 
-.button-block li a {
+.button-block li a, #search-submit {
   font-size: 12px !important;
 }
 
 #right-col h2 {
   font-size: 22px;
+}
+
+#categories, #channels {
+  margin: 0;
+  padding: 0;
+}
+
+.frame .footer {
+  margin-top: -20px;
+}
+
+.media-box h2 {
+  font-weight: normal;
 }
