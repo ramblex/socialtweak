@@ -23,9 +23,9 @@ $(document).ready(function() {
   }
 
   $.history.init(function(page) {
-    $('#content').hide().load(page + ' #content', function() {
+    $('#content').load(page + ' #content', function() {
       init_content(page);
-    }).fadeIn(300);
+    }).hide().fadeIn(300);
   });
 
 
