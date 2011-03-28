@@ -36,7 +36,12 @@
             <ul class="button-block">
               <li><a href="#">Favorites</a></li>
               <li><a href="#">Popular</a></li>
-              <li><a href="#">Search</a></li>
+              <li>
+                <form method="post" action="/search" class="search-form">
+                  <input type="text" name="search[query]" id="search-query" />
+                  <input type="submit" value="Search" id="search-submit" />
+                </form>
+              </li>
             </ul>
             <div id="sponsored">
               <div class="media-box">
@@ -84,7 +89,9 @@
           </div>
           <div id="right-col">
             <h2>CHANNELS</h2>
-            <a href="#"><img src="images/channel-one.png" alt="Channel one" /></a>
+            <ul id="channels">
+              <li><a href="#"><img src="images/channel-one.png" alt="Channel one" /></a></li>
+            </ul>
           </div>
         </div> <!-- end games and frame-content -->
         <div class="footer"></div>

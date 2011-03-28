@@ -260,12 +260,20 @@ h1 {
   margin-bottom: 20px;
 }
 
-#right-col img {
-  width: 100%;
+#categories, #channels {
+  padding-left: 0;
   border-top: 1px solid black;
+}
+
+#categories li, #channels li {
+  list-style: none;
   border-bottom: 1px solid black;
   margin: 0 auto;
   padding: 20px 0;
+}
+
+#categories li a {
+  color: black;
 }
 
 /* This essentially moves the bottom of the frame background to the correct place */
@@ -302,6 +310,39 @@ h1 {
   font-size: 11.5px;
   background: url(../images/button-block.png) no-repeat top right;
   font-weight: bold;
+}
+
+/* Search form */
+.search-form {
+  width: 200px;
+  margin-top: 4px;
+}
+
+#search-query {
+  width: 130px;
+  border: 0;
+  height: 20px;
+  line-height: 20px;
+  float: right;
+  margin-right: 10px;
+}
+
+#search-submit {
+  background: none;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  width: 50px;
+  height: 21px;
+  line-height: 21px;
+  font-size: 11.5px;
+  margin: 01
+  padding: 0;
+  cursor: pointer;
+}
+
+#search-submit:hover {
+  text-decoration: underline;
 }
 
 #games, #videos {
