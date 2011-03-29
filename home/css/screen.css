@@ -158,20 +158,25 @@ h1 {
 }
 
 #thumbnails {
-  width: 940px;
+  width: 990px;
   margin: 20px auto;
   height: 200px;
-  padding: 0;
+  padding: 0 55px;
 }
 
 #thumbnails li {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 300px;
+  width: 330px;
   height: 200px;
   float: left;
-  margin: 0 5px;
+}
+
+#thumbnails li img {
+  margin: 0 auto;
+  width: 300px;
+  display: block;
 }
 
 #slidedeck, .frame {
