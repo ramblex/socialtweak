@@ -568,3 +568,8 @@ h1 {
   top: 100px;
   left: 0;
 }
+
+#loading img {
+  float: left;
+  margin-top: -10px;
+}

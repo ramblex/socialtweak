@@ -7,7 +7,7 @@ $(document).ready(function() {
     $("#nav a, #thumbnails a").click(function() {
       var url = $(this).attr('href');
       url = url.replace(/^.*#/, '');
-      $('#content').prepend('<div id="loading">Loading...</div>');
+      $('#content').prepend('<div id="loading"><img src="images/ajax-loader.gif" width="40">Loading...</div>');
       $.history.load(url);
       $('#loading').fadeOut();
       return false;
