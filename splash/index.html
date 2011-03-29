@@ -39,13 +39,30 @@
           $(selected_dot).addClass('selected');
         });
 
-        $("#roundabout ul").roundabout({
-          btnNext: '#next',
-          btnPrev: '#previous',
-          reflect: true
-        });
+        var interval;
+        $("#roundabout ul")
+          .roundabout({
+            btnNext: '#next',
+            btnPrev: '#previous',
+            reflect: true
+          })
+          .hover(
+            function() {
+              clearInterval(interval);
+            },
+            function() {
+              interval = startAutoPlay();
+            }
+          );
 
+          interval = startAutoPlay();
       });
+
+      function startAutoPlay() {
+        return setInterval(function() {
+          $('#roundabout ul').roundabout_animateToNextChild();
+        }, 5000);
+      }
     </script>
   </head>
   <body>
