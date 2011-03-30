@@ -162,6 +162,7 @@ h1 {
   text-align: center;
   margin-bottom: 8px;
   background: url(../images/status-msg.png);
+  font-size: 16px;
 }
 
 #status-post .status-input {
@@ -227,13 +228,15 @@ h1 {
 }
 
 #slidedeck dd {
-  background: white;
+  background: #1d1d1d;
   overflow: auto;
-  border-right: 5px solid #1d1d1d;
-  border-left: 1px solid #1d1d1d;
-  border-top: 1px solid #1d1d1d;
-  border-bottom: 1px solid #1d1d1d;
+  padding: 1px 5px 1px 0;
+}
+
+#slidedeck dd .content {
+  background: white;
   padding: 10px;
+  height: 308px;
 }
 
 #slidedeck .index {

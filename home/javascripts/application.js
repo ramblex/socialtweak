@@ -13,6 +13,7 @@ $(document).ready(function() {
       return false;
     });
 
+    $('#slidedeck dd').wrapInner('<div class="content" />');
     $("#slidedeck dl").slidedeck();
 
     // Highlight the correct link
