@@ -209,6 +209,7 @@ h1 {
 #slidedeck dl {
   height: 330px;
   position: relative;
+  background: #1d1d1d;
 }
 
 /* Spine */
@@ -218,7 +219,7 @@ h1 {
   height: 50px;
   line-height: 50px;
   display: block;
-  background: url(../images/spine.png) no-repeat;
+  background: url(../images/spine.png) no-repeat #1d1d1d;
   position: relative;
   color: white;
   padding: 0 20px;
@@ -232,12 +233,14 @@ h1 {
   background: #1d1d1d;
   overflow: auto;
   padding: 1px 5px 1px 0;
+  color: white;
 }
 
 #slidedeck dd .content {
   background: white;
   padding: 10px;
   height: 308px;
+  color: black;
 }
 
 #slidedeck .index {
