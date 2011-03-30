@@ -30,3 +30,12 @@
 #current-progress {
   float: left;
 }
+
+.tweet-button, .post-button {
+  text-transform: capitalize;
+}
+
+#progress {
+  width: 200px;
+  margin-left: -35px;
+}
