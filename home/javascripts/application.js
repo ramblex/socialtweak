@@ -51,6 +51,12 @@ $(document).ready(function() {
 
   set_progress(70);
 
+  // Default text
+  $('#quick-post-content').val('Enter text...').click(function() {
+    $(this).val('');
+    $(this).unbind('click');
+  });
+
   // Background chooser
   $("#choose-background a").click(function() {
     var name = $(this).attr('name');
