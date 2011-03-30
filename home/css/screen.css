@@ -485,54 +485,71 @@ h1 {
 
 #progress {
   float: left;
-  width: 260px;
+  width: 200px;
   text-align: center;
+  margin: 30px 55px 0 0;
+  color: #666;
 }
 
 #progress p {
-  margin: 5px 0;
+  margin: 5px 0 0 0;
+  font-size: 11px;
+  letter-spacing: -0.5px;
 }
 
-#progress-bar {
-  width: 254px;
-  height: 26px;
+.progress-bar {
+  text-align: center;
+  margin: 0 auto 5px auto;
+  width: 186px;
+  height: 12px;
   background: url(../images/progress-bar-bg.png) no-repeat;
-  padding: 2px;
+  padding: 1px 3px 2px 1px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
-#current-progress {
+#current-progress, #unlock-progress {
   width: 50px;
-  height: 25px;
+  height: 11px;
   background: #3f8545;
 }
 
-#account-info {
-  width: 200px;
-  height: 95px;
-  margin-top: 10px;
-  float: left;
+#quick-post {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  width: 205px;
+  height: 65px;
 }
 
-#account-info img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-  display: block;
+#quick-post-content {
+  width: 106px;
+  height: 51px;
   float: left;
-}
-
-#account-info p {
+  padding: 7px;
   margin: 0;
+  border: 0;
+  color: #666;
+  font: 11px Helvetica;
+  font-weight: bold;
+  background: #ccc;
 }
 
-#account-info a {
-  display: block;
-  text-align: center;
+#quick-post .tweet-button, #quick-post .post-button {
+  margin: 0 0 7px 7px;
+  width: 75px;
+  height: 28px;
+  text-indent: -30000px;
+  cursor: pointer;
+  border: 0;
 }
 
-#see-profile {
-  clear: both;
-  margin-top: 10px;
+#quick-post .post-button {
+  background: url(../images/small-post.png);
+}
+
+#quick-post .tweet-button {
+  background: url(../images/small-tweet.png) no-repeat;
 }
 
 /* Account, Logout, Choose background */
@@ -555,6 +572,7 @@ h1 {
 #open-footer ul li img {
   width: 20px;
   height: 20px;
+  margin-left: 10px;
   display: block;
   float: right;
   border: 0;

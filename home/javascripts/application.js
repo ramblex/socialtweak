@@ -44,7 +44,7 @@ $(document).ready(function() {
 
   // Progress bar
   function set_progress(percentage) {
-    var total_width = 254;
+    var total_width = 185;
     $("#current-progress").width((percentage / 100) * total_width);
   }
 
