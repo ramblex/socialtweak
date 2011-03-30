@@ -100,7 +100,7 @@ h1 {
 
 /* Social page */
 #social-profile {
-  width: 740px;
+  width: 940px;
   margin: 20px auto 30px auto;
   height: 215px;
   padding: 1px; /* Other margins won't work without this */
@@ -114,47 +114,63 @@ h1 {
   float: left;
 }
 
-#social-profile .username {
-  background: url(../images/usernamecontainer.png) no-repeat;
-  width: 390px;
-  height: 50px;
-  line-height: 50px;
+#status-post {
+  margin-top: 25px;
+}
+
+#status-post label {
+  font-size: 18px;
+  display: block;
   color: white;
-  font-weight: 600;
-  font-size: 26px;
-  padding:  0 0 0 10px;
-  margin: 20px 0 0 221px;
+  margin-bottom: 15px;
 }
 
-#social-profile .status {
-  background: url(../images/statuscontainer.png) no-repeat;
-  height: 60px;
-  font-size: 23px;
-  font-weight: 550;
+#status-post textarea {
+  background: none;
+  border: 0;
   color: white;
-  padding: 15px 17px 15px 15px;
-  margin: 30px 0 0 221px;
+  font: 14px Helvetica, Arial, sans;
+  width: 100%;
+  height: 100px;
 }
 
-#social-profile .status p {
-  margin: 0;
-  padding: 0;
-  height: 40px;
+#status-post .post-button, #status-post .tweet-button {
+  width: 106px;
+  height: 37px;
+  border: 0;
+  float:right;
+  margin-bottom: 8px;
+  cursor: pointer;
+  text-indent: -30000px;
 }
 
-#social-profile .links {
-  font-size: 14px;
+#status-post .tweet-button {
+  background: url(../images/tweet.png);
+}
+
+#status-post .post-button {
+  background: url(../images/post.png);
+}
+
+#status-msg {
   float: right;
+  overflow: hidden;
+  width: 106px;
+  height: 50px;
+  font-weight: bold;
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 8px;
+  background: url(../images/status-msg.png);
 }
 
-#social-profile .links li {
+#status-post .status-input {
   float: left;
-  list-style: none;
-  margin-left: 5px;
-}
-
-#social-profile .links li a {
-  color: white;
+  width: 570px;
+  background: url(../images/statuscontainer.png);
+  margin-right: 10px;
+  padding: 15px;
+  height: 135px;
 }
 
 #thumbnails {

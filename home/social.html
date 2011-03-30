@@ -19,8 +19,8 @@
       </a>
       <ul id="nav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="social.html">Social</a></li>
-        <li><a href="entertainment.html" class="selected">Entertainment</a></li>
+        <li><a href="social.html" class="selected">Social</a></li>
+        <li><a href="entertainment.html">Entertainment</a></li>
         <li><a href="#">Favorites</a></li>
         <li><a href="#">Rewards</a></li>
       </ul>
@@ -29,15 +29,15 @@
     <div id="content">
       <div id="social-profile">
         <div class="image-container"><img src="images/large-profile.png" width="198" height="192" /></div>
-        <p class="username">Gabriel</p>
-        <div class="status">
-          <p>Rockin life, one day at a time</p>
-          <ul class="links">
-            <li><a href="#">Like</a></li>
-            <li>-</li>
-            <li><a href="#">Flag</a></li>
-          </ul>
-        </div> <!-- end status -->
+        <form id="status-post" method="post" action="fb-post">
+          <div class="status-input">
+            <label for="tweet-post">Tweet or post to Facebook</label>
+            <textarea id="tweet-post">Test of tweet!</textarea>
+          </div>
+          <div id="status-msg" class="highlight">Get more points!</div>
+          <input type="button" value="Tweet" class="tweet-button" />
+          <input type="submit" value="Post" class="post-button" />
+        </form>
       </div> <!-- end social-profile -->
 
       <div id="slidedeck">
@@ -45,11 +45,12 @@
           <dt>Social</dt>
           <dd>Social content</dd>
 
-          <dt>I am</dt>
-          <dd>I am content</dd>
+          <dt>Facebook</dt>
+          <dd>Facebook content</dd>
 
-          <dt>Friends</dt>
-          <dd>Friends content</dd>
+          <dt>Twitter</dt>
+          <dd>
+          </dd>
 
           <dt>Invite</dt>
           <dd>Invite content</dd>
