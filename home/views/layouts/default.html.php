@@ -11,6 +11,7 @@
     <script type="text/javascript" src="javascripts/slidedeck.jquery.lite.js"></script>
     <script type="text/javascript" src="javascripts/jquery.history.js"></script>
     <script type="text/javascript" src="javascripts/application.js"></script>
+    <script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
   </head>
   <body>
     <div id="header">
@@ -21,7 +22,6 @@
         <li><a href="/home" class="selected">Home</a></li>
         <li><a href="/social">Social</a></li>
         <li><a href="/entertainment">Entertainment</a></li>
-        <li><a href="/favorites">Favorites</a></li>
         <li><a href="/rewards">Rewards</a></li>
       </ul>
     </div> <!-- end header -->
