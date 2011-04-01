@@ -14,4 +14,10 @@ dispatch('/', 'index');
     return html('index.html.php');
   }
 
+dispatch('/social', 'social');
+  function social()
+  {
+    return html('social.html.php');
+  }
+
 run();
