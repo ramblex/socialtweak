@@ -1366,6 +1366,25 @@ function route_find($method, $path)
 
 /**
  * Returns a string to output
+ *
+ * Example: render($featured, 'video');
+ *
+ * Will render the partial _video.html.php for each item in $featured. The partial will be passed
+ * the element from $featured as $video.
+ */
+function render_array($arr, $partial, $locals)
+{
+  $output = "";
+  foreach ($arr as $obj_arr)
+  {
+    $locals[$partial] = $obj_arr;
+    echo render("_$partial.html.php", null, $locals);
+  }
+  return $output;
+}
+
+/**
+ * Returns a string to output
  * 
  * It might use a template file, a function, or a formatted string (like {@link sprintf()}).
  * It could be embraced by a layout or not.
@@ -1379,6 +1398,10 @@ function route_find($method, $path)
  */
 function render($content_or_func, $layout = '', $locals = array())
 {
+  if (is_array($content_or_func))
+  {
+    return render_array($content_or_func, $layout, $locals);
+  }
   $args = func_get_args();
   $content_or_func = array_shift($args);
   $layout = count($args) > 0 ? array_shift($args) : layout();

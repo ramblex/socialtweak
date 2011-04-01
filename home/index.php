@@ -29,12 +29,37 @@ dispatch('/entertainment', 'entertainment');
 dispatch('/games', 'games');
   function games()
   {
+    set('featured_games', array(
+      array('name' => 'Game one featured'),
+      array('name' => 'GAME two'),
+      array('name' => 'Third featured')
+    ));
+    set('games', array(
+      array('name' => 'Hello'),
+      array('name' => 'World'),
+      array('name' => 'Of'),
+      array('name' => 'Games!'),
+      array('name' => 'Hello'),
+      array('name' => 'World'),
+      array('name' => 'Of'),
+      array('name' => 'Games!'),
+    ));
     return html('games.html.php');
   }
 
 dispatch('/videos', 'videos');
   function videos()
   {
+    set('featured_videos', array(
+      array('name' => 'video one featured'),
+      array('name' => 'video two'),
+    ));
+    set('videos', array(
+      array('name' => 'Hello'),
+      array('name' => 'World'),
+      array('name' => 'Of'),
+      array('name' => 'Videos!'),
+    ));
     return html('videos.html.php');
   }
 

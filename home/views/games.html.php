@@ -15,40 +15,10 @@
         </li>
       </ul>
       <div id="sponsored">
-        <div class="media-box">
-          <img src="images/video-bg.png" alt="Video name" />
-          <h2><a href="#">GAME TITLE</a></h2>
-        </div>
-        <div class="media-box">
-          <img src="images/video-bg.png" alt="Video name" />
-          <h2><a href="#">GAME TITLE</a></h2>
-        </div>
-        <div class="media-box">
-          <img src="images/video-bg.png" alt="Video name" />
-          <h2><a href="#">GAME TITLE</a></h2>
-        </div>
+        <?php echo render($featured_games, 'media'); ?>
       </div>
       <p id="sponsored-title">SPONSORED</p>
-      <div class="media-box">
-        <img src="images/video-bg.png" alt="Video name" />
-        <h2><a href="#">GAME TITLE</a></h2>
-      </div>
-      <div class="media-box">
-        <img src="images/video-bg.png" alt="Video name" />
-        <h2><a href="#">GAME TITLE</a></h2>
-      </div>
-      <div class="media-box">
-        <img src="images/video-bg.png" alt="Video name" />
-        <h2><a href="#">GAME TITLE</a></h2>
-      </div>
-      <div class="media-box">
-        <img src="images/video-bg.png" alt="Video name" />
-        <h2><a href="#">GAME TITLE</a></h2>
-      </div>
-      <div class="media-box">
-        <img src="images/video-bg.png" alt="Video name" />
-        <h2><a href="#">GAME TITLE</a></h2>
-      </div>
+      <?php echo render($games, 'media'); ?>
     </div> <!-- end left-col -->
     <div id="right-col">
       <h2>CATEGORIES</h2>

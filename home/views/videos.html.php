@@ -15,48 +15,10 @@
         </li>
       </ul>
       <div id="sponsored">
-        <div class="media-box">
-          <img src="images/video-bg.png" alt="Video name" />
-          <h2><a href="#">VIDEO TITLE</a></h2>
-        </div>
-        <div class="media-box">
-          <img src="images/video-bg.png" alt="Video name" />
-          <h2><a href="#">VIDEO TITLE</a></h2>
-        </div>
-        <div class="media-box">
-          <img src="images/video-bg.png" alt="Video name" />
-          <h2><a href="#">VIDEO TITLE</a></h2>
-        </div>
+        <?php echo render($featured_videos, 'media'); ?>
       </div>
       <p id="sponsored-title">SPONSORED</p>
-      <div class="media-box">
-        <img src="images/video-bg.png" alt="Video name" />
-        <h2><a href="#">VIDEO TITLE</a></h2>
-      </div>
-      <div class="media-box">
-        <img src="images/video-bg.png" alt="Video name" />
-        <h2><a href="#">VIDEO TITLE</a></h2>
-      </div>
-      <div class="media-box">
-        <img src="images/video-bg.png" alt="Video name" />
-        <h2><a href="#">VIDEO TITLE</a></h2>
-      </div>
-      <div class="media-box">
-        <img src="images/video-bg.png" alt="Video name" />
-        <h2><a href="#">VIDEO TITLE</a></h2>
-      </div>
-      <div class="media-box">
-        <img src="images/video-bg.png" alt="Video name" />
-        <h2><a href="#">VIDEO TITLE</a></h2>
-      </div>
-      <div class="media-box">
-        <img src="images/video-bg.png" alt="Video name" />
-        <h2><a href="#">VIDEO TITLE</a></h2>
-      </div>
-      <div class="media-box">
-        <img src="images/video-bg.png" alt="Video name" />
-        <h2><a href="#">VIDEO TITLE</a></h2>
-      </div>
+      <?php echo render($videos, 'media'); ?>
     </div>
     <div id="right-col">
       <h2>CHANNELS</h2>
