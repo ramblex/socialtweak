@@ -60,4 +60,3 @@
   </div> <!-- end games and frame-content -->
   <div class="footer"></div>
 </div> <!-- end frame -->
-</div> <!-- end content -->

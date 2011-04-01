@@ -18,11 +18,11 @@
         <h1>SocialTweak</h1>
       </a>
       <ul id="nav">
-        <li><a href="index.html" class="selected">Home</a></li>
-        <li><a href="social.html">Social</a></li>
-        <li><a href="entertainment.html">Entertainment</a></li>
-        <li><a href="#">Favorites</a></li>
-        <li><a href="#">Rewards</a></li>
+        <li><a href="/" class="selected">Home</a></li>
+        <li><a href="/social">Social</a></li>
+        <li><a href="/entertainment">Entertainment</a></li>
+        <li><a href="/favorites">Favorites</a></li>
+        <li><a href="/rewards">Rewards</a></li>
       </ul>
     </div> <!-- end header -->
 
