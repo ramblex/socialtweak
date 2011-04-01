@@ -8,6 +8,8 @@ function before()
   layout('layouts/default.html.php');
 }
 
+dispatch('/home', 'index');
+
 dispatch('/', 'index');
   function index()
   {

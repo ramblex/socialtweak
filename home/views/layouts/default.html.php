@@ -18,7 +18,7 @@
         <h1>SocialTweak</h1>
       </a>
       <ul id="nav">
-        <li><a href="/" class="selected">Home</a></li>
+        <li><a href="/home" class="selected">Home</a></li>
         <li><a href="/social">Social</a></li>
         <li><a href="/entertainment">Entertainment</a></li>
         <li><a href="/favorites">Favorites</a></li>
