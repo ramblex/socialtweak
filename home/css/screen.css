@@ -462,6 +462,33 @@ h1 {
   margin-bottom: 75px;
 }
 
+#counter {
+  margin: 0 auto;
+  height: 100px;
+  width: 196px;
+  padding-left: 0;
+}
+
+#counter li {
+  list-style: none;
+  float: left;
+  margin: 5px;
+  padding: 0;
+}
+
+#counter li span {
+  color: white;
+  background: url(../images/counter.png) no-repeat;
+  display: table-cell;
+  width: 88px;
+  height: 80px;
+  font-size: 50px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  letter-spacing: -1px;
+}
+
 #banner {
   width: 945px;
   height: 50px;

@@ -21,6 +21,20 @@ $(document).ready(function() {
       $('#nav a').removeClass('selected');
       $('#nav a[href="/'+page+'"]').addClass('selected');
     }
+
+    // Countdown clock
+    if ($("#counter").length != 0) {
+      setInterval(function countDown() {
+          var current_mins = parseInt($("#minutes").text());
+          if (current_mins == 0) {
+            var current_hours = parseInt($("#hours").text());
+            $("#hours").text(current_hours - 1);
+            $("#minutes").text(59);
+          } else {
+            $("#minutes").text(current_mins - 1);
+          }
+        }, 60000);
+    }
   }
 
   $.history.init(function(page) {
@@ -66,4 +80,5 @@ $(document).ready(function() {
     $('body').css('background-image', 'url(images/backgrounds/'+name+'.png)' + options);
     return false;
   });
+
 });
