@@ -65,4 +65,10 @@ dispatch('/videos', 'videos');
     return html('videos.html.php');
   }
 
+dispatch('/rewards', 'rewards');
+  function rewards()
+  {
+    return html('rewards.html.php');
+  }
+
 run();

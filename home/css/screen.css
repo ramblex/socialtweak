@@ -434,6 +434,65 @@ h1 {
   font-weight: normal;
 }
 
+/* Rewards */
+#rewards {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#rewards a {
+  color: black;
+}
+
+#blurb {
+  display: block;
+  float: left;
+  margin-top: 55px;
+  font-size: 22px;
+  font-weight: bold;
+  width: 420px;
+  padding-right: 60px;
+}
+
+#countdown {
+  height: 155px;
+  float: right;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+#banner {
+  width: 945px;
+  height: 50px;
+  margin: 40px auto;
+  display: block;
+  background: url(../images/rewards-banner.png) no-repeat;
+}
+
+#reward-items {
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+
+#reward-items li {
+  list-style: none;
+  float: left;
+  width: 480px;
+  text-align: center;
+}
+
+#reward-items img {
+  width: 305px;
+  height: 150px;
+}
+
+#reward-items h2, #reward-items p {
+  margin: 0;
+  font-weight: bold;
+}
+
 /* Footer */
 #footer {
   z-index: 3000;
