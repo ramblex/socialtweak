@@ -58,12 +58,12 @@ $(document).ready(function() {
 
   // Background chooser
   $("#choose-background a").click(function() {
-    var name = $(this).attr('name');
+    var name = $(this).attr('id');
     var options = "";
     if (name == "white") {
       options += " no-repeat";
     }
-    $('body').css('background-image', 'url(images/backgrounds/'+$(this).attr('name')+'.png)' + options);
+    $('body').css('background-image', 'url(images/backgrounds/'+name+'.png)' + options);
     return false;
   });
 });
