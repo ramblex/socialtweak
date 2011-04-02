@@ -1,6 +1,6 @@
-<div id="banner">
+<div id="current-container">
   <div id="current-video"></div>
-</div> <!-- end banner -->
+</div> <!-- end current-container -->
 <div class="frame" id="videos">
   <div class="content clearfix">
     <div id="left-col">

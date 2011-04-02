@@ -1,6 +1,6 @@
-<div id="banner">
+<div id="current-container">
   <div id="current-game"></div>
-</div> <!-- end banner -->
+</div> <!-- end current-container -->
 <div class="frame" id="games">
   <div class="content clearfix">
     <div id="left-col">

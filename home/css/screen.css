@@ -374,7 +374,7 @@ h1 {
   margin-top: 50px;
 }
 
-#banner {
+#current-container {
   margin-top: 70px;
   height: 370px;
   background: url(../images/current-game.png) repeat-x;
