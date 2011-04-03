@@ -520,6 +520,58 @@ nav li a {
   font-weight: bold;
 }
 
+/* Redeem */
+#wheel {
+  width: 787px;
+  height: 205px;
+  margin: -7px auto 0 auto;
+  position: relative;
+  background: url(../images/wheel.png) no-repeat;
+  overflow: hidden;
+}
+
+#wheel li {
+  background: gray;
+  width: 95px;
+  height: 95px;
+  list-style: none;
+  text-align: center;
+  padding: 15px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 21px;
+  line-height: 0.9;
+  font-weight: bold;
+}
+
+#wheel li span {
+  font-size: 40px;
+}
+
+#redeem-content {
+  width: 960px;
+  margin: 50px auto 0 auto;
+}
+
+#redeem-item, #last-spin, #current-points {
+  float: left;
+  width: 320px;
+  height: 200px;
+  text-align: center;
+}
+
+#current-points {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+#current-points span {
+  display: block;
+  font-size: 75px;
+  font-weight: bold;
+  letter-spacing: -3px;
+}
+
 /* Footer */
 footer {
   z-index: 3000;

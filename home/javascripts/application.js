@@ -35,6 +35,63 @@ $(document).ready(function() {
           }
         }, 60000);
     }
+
+    // Wheel
+    function getXPos(angle) {
+      return left_offset + (radius * Math.cos(angle * (Math.PI / 180)));
+    }
+    function getYPos(angle) {
+      return bottom_offset + (radius * Math.sin(angle * (Math.PI / 180)));
+    }
+
+    function rotate(items, stopIdx) {
+      var speed = 30;
+      var num_rotations_to_do = Math.random() * 450;
+      var num_rotations_done = 0;
+      var intervalId = setInterval(function() {
+        num_rotations_done += 1;
+        items.each(function() {
+          var angle = parseInt($(this).attr('angle'));
+          var bottom = parseInt(getYPos(angle));
+          $(this).css({
+            'left': getXPos(angle)+'px',
+            'bottom': bottom+'px',
+            '-webkit-transform': 'rotate('+-(angle + 90)+'deg)',
+            '-moz-transform': 'rotate('+-(angle + 90)+'deg)'
+          });
+          $(this).attr('angle', angle + 5);
+          if (items.index(this) == stopIdx) {
+            if (num_rotations_done > num_rotations_to_do && bottom == 50) {
+              clearInterval(intervalId);
+              $('#last-spin h3 span').text($(this).text());
+            }
+          }
+        });
+      }, 13);
+    }
+
+    var wheel_width = $('#wheel').width();
+    var items = $('#wheel li');
+    var radius = (wheel_width / 2);
+    var left_offset = radius - ($(items[0]).outerWidth() / 2);
+    var bottom_offset = radius + 50;
+    var angle = -90;
+    items.each(function() {
+      $(this).attr('angle', angle);
+      $(this).css({
+        'position': 'absolute',
+        'left': getXPos(angle),
+        'bottom': getYPos(angle),
+        '-webkit-transform': 'rotate('+-(angle + 90)+'deg)',
+        '-moz-transform': 'rotate('+-(angle + 90)+'deg)',
+        'z-index': 0
+      });
+      angle += (360 / items.length);
+    });
+    $('#spin').click(function() {
+      rotate(items, Math.floor(Math.random() * items.length));
+      return false;
+    });
   }
 
   $.history.init(function(page) {

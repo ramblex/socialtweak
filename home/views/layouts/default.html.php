@@ -10,8 +10,8 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/slidedeck.jquery.lite.js"></script>
     <script type="text/javascript" src="javascripts/jquery.history.js"></script>
+    <script type="text/javascript" src="javascripts/wheel.js"></script>
     <script type="text/javascript" src="javascripts/application.js"></script>
-    <script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
