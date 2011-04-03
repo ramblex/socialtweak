@@ -17,15 +17,6 @@
   </div>
 
   <ul id="reward-items" class="clearfix">
-    <li>
-      <a href="#"><img src="images/macbook-pro.png" alt="Macbook Pro"></img></a>
-      <h2><a href="#">Macbook Pro</a></h2>
-      <p>1029 Participants</p>
-    </li>
-    <li>
-      <a href="#"><img src="images/extra-point-bar.png" alt="Extra point bar for one week"></img></a>
-      <h2><a href="#">Extra point bar for one week</a></h2>
-      <p>1029 Participants</p>
-    </li>
+    <?php echo render($reward_list, 'reward'); ?>
   </ul>
 </div>

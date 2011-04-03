@@ -4,9 +4,9 @@ $(document).ready(function() {
 
   // Javascript that affects #content
   function init_content(page) {
-    $("#nav a, #thumbnails a").click(function() {
+    $("#nav a, #thumbnails a, #reward-items a").click(function() {
       var url = $(this).attr('href');
-      url = url.replace(/\//, '');
+      url = url.replace(/^\//, '');
       $('#content').prepend('<div id="loading"><img src="images/ajax-loader.gif" width="40">Loading...</div>');
       $.history.load(url);
       $('#loading').fadeOut();

@@ -65,10 +65,22 @@ dispatch('/videos', 'videos');
     return html('videos.html.php');
   }
 
+
 dispatch('/rewards', 'rewards');
   function rewards()
   {
+    $reward_list = array(
+      array('id' => 1, 'name' => 'Macbook Pro', 'participants' => 100, 'img' => 'macbook-pro.png'),
+      array('id' => 2, 'name' => 'Extra point bar for one week', 'participants' => 1029, 'img' => 'extra-point-bar.png')
+    );
+    set('reward_list', $reward_list);
     return html('rewards.html.php');
+  }
+
+dispatch('/redeem/:reward_id', 'redeem');
+  function redeem()
+  {
+    return html('redeem.html.php');
   }
 
 run();
