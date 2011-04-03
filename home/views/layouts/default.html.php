@@ -12,25 +12,26 @@
     <script type="text/javascript" src="javascripts/jquery.history.js"></script>
     <script type="text/javascript" src="javascripts/application.js"></script>
     <script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <div id="header">
-      <a href="/">
-        <h1>SocialTweak</h1>
-      </a>
-      <ul id="nav">
+    <header>
+      <a href="/"><h1>SocialTweak</h1></a>
+      <nav>
         <li><a href="/home" class="selected">Home</a></li>
         <li><a href="/social">Social</a></li>
         <li><a href="/entertainment">Entertainment</a></li>
         <li><a href="/rewards">Rewards</a></li>
-      </ul>
-    </div> <!-- end header -->
+      </nav>
+    </header>
 
     <div id="content">
       <?php echo $content ?>
     </div> <!-- end content -->
 
-    <div id="footer">
+    <footer>
       <div id="closed-footer">
         <ul>
           <li><a href="#">contact</a></li>
@@ -66,6 +67,6 @@
           </ul>
         </div> <!-- end right-open-footer -->
       </div> <!-- end open-footer -->
-    </div> <!-- end footer -->
+    </footer>
   </body>
 </html>
