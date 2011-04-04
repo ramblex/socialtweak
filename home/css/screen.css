@@ -55,7 +55,7 @@ html[xmlns] .clearfix {
 }
 
 /* Header */
-#header {
+header {
   font-weight: 550;
   height: 83px;
   padding-bottom: 7px;
@@ -75,19 +75,19 @@ h1 {
   background: url(../images/Logo.png);
 }
 
-#nav {
+nav {
   float: right;
   margin: 30px 32px 0 0;
 }
 
-#nav li {
+nav li {
   display: block;
   float: left;
   list-style: none;
   margin-left: 25px;
 }
 
-#nav li a {
+nav li a {
   font-size: 23px;
   color: white;
   letter-spacing: -1px;
@@ -374,7 +374,7 @@ h1 {
   margin-top: 50px;
 }
 
-#banner {
+#current-container {
   margin-top: 70px;
   height: 370px;
   background: url(../images/current-game.png) repeat-x;
@@ -434,8 +434,146 @@ h1 {
   font-weight: normal;
 }
 
+/* Rewards */
+#rewards {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#rewards a {
+  color: black;
+}
+
+#blurb {
+  display: block;
+  float: left;
+  margin-top: 55px;
+  font-size: 22px;
+  font-weight: bold;
+  width: 420px;
+  padding-right: 60px;
+}
+
+#countdown {
+  height: 155px;
+  float: right;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+#counter {
+  margin: 0 auto;
+  height: 100px;
+  width: 196px;
+  padding-left: 0;
+}
+
+#counter li {
+  list-style: none;
+  float: left;
+  margin: 5px;
+  padding: 0;
+}
+
+#counter li span {
+  color: white;
+  background: url(../images/counter.png) no-repeat;
+  display: table-cell;
+  width: 88px;
+  height: 80px;
+  font-size: 50px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  letter-spacing: -1px;
+}
+
+#banner {
+  width: 945px;
+  height: 50px;
+  margin: 40px auto;
+  display: block;
+  background: url(../images/rewards-banner.png) no-repeat;
+}
+
+#reward-items {
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+
+#reward-items li {
+  list-style: none;
+  float: left;
+  width: 480px;
+  text-align: center;
+}
+
+#reward-items img {
+  width: 305px;
+  height: 150px;
+}
+
+#reward-items h2, #reward-items p {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Redeem */
+#wheel {
+  width: 787px;
+  height: 205px;
+  margin: -7px auto 0 auto;
+  position: relative;
+  background: url(../images/wheel.png) no-repeat;
+  overflow: hidden;
+}
+
+#wheel li {
+  background: gray;
+  width: 95px;
+  height: 95px;
+  list-style: none;
+  text-align: center;
+  padding: 15px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 21px;
+  line-height: 0.9;
+  font-weight: bold;
+}
+
+#wheel li span {
+  font-size: 40px;
+}
+
+#redeem-content {
+  width: 960px;
+  margin: 50px auto 0 auto;
+}
+
+#redeem-item, #last-spin, #current-points {
+  float: left;
+  width: 320px;
+  height: 200px;
+  text-align: center;
+}
+
+#current-points {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+#current-points span {
+  display: block;
+  font-size: 75px;
+  font-weight: bold;
+  letter-spacing: -3px;
+}
+
 /* Footer */
-#footer {
+footer {
   z-index: 3000;
   display: block;
   position: fixed;
@@ -448,7 +586,7 @@ h1 {
   width: 100%;
 }
 
-#footer a {
+footer a {
   color: white;
 }
 

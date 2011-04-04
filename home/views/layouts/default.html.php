@@ -10,56 +10,28 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/slidedeck.jquery.lite.js"></script>
     <script type="text/javascript" src="javascripts/jquery.history.js"></script>
+    <script type="text/javascript" src="javascripts/wheel.js"></script>
     <script type="text/javascript" src="javascripts/application.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <div id="header">
-      <a href="/">
-        <h1>SocialTweak</h1>
-      </a>
-      <ul id="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="social.html" class="selected">Social</a></li>
-        <li><a href="entertainment.html">Entertainment</a></li>
-        <li><a href="#">Favorites</a></li>
-        <li><a href="#">Rewards</a></li>
-      </ul>
-    </div> <!-- end header -->
+    <header>
+      <a href="/"><h1>SocialTweak</h1></a>
+      <nav>
+        <li><a href="/home" class="selected">Home</a></li>
+        <li><a href="/social">Social</a></li>
+        <li><a href="/entertainment">Entertainment</a></li>
+        <li><a href="/rewards">Rewards</a></li>
+      </nav>
+    </header>
 
     <div id="content">
-      <div id="social-profile">
-        <div class="image-container"><img src="images/large-profile.png" width="198" height="192" /></div>
-        <form id="status-post" method="post" action="fb-post">
-          <div class="status-input">
-            <label for="tweet-post">Tweet or post to Facebook</label>
-            <textarea id="tweet-post">Test of tweet!</textarea>
-          </div>
-          <div id="status-msg" class="highlight">Get more points!</div>
-          <input type="button" value="Tweet" class="tweet-button" />
-          <input type="submit" value="Post" class="post-button" />
-        </form>
-      </div> <!-- end social-profile -->
-
-      <div id="slidedeck">
-        <dl>
-          <dt>Social</dt>
-          <dd>Social content</dd>
-
-          <dt>Facebook</dt>
-          <dd>Facebook content</dd>
-
-          <dt>Twitter</dt>
-          <dd>
-          </dd>
-
-          <dt>Invite</dt>
-          <dd>Invite content</dd>
-        </dl>
-      </div> <!-- end slidedeck -->
-
+      <?php echo $content ?>
     </div> <!-- end content -->
 
-    <div id="footer">
+    <footer>
       <div id="closed-footer">
         <ul>
           <li><a href="#">contact</a></li>
@@ -88,13 +60,13 @@
             <li><a href="#">Logout</a></li>
             <li>Choose a background:</li>
             <li id="choose-background">
-              <a href="#" name="grass"><img src="images/select-grass.png" alt="Grass background" /></a>
-              <a href="#" name="water"><img src="images/select-water.png" alt="Water background" /></a>
-              <a href="#" name="wood"><img src="images/select-wood.png" alt="Wood background" /></a>
+              <a href="#" id="grass"><img src="images/select-grass.png" alt="Grass background" /></a>
+              <a href="#" id="water"><img src="images/select-water.png" alt="Water background" /></a>
+              <a href="#" id="wood"><img src="images/select-wood.png" alt="Wood background" /></a>
             </li>
           </ul>
         </div> <!-- end right-open-footer -->
       </div> <!-- end open-footer -->
-    </div> <!-- end footer -->
+    </footer>
   </body>
 </html>
