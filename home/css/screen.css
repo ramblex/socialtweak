@@ -604,18 +604,51 @@ nav li a {
 #redeem-content {
   width: 960px;
   margin: 50px auto 0 auto;
+  font-weight: bold;
+  font-size: 16px;
+  height: 300px;
 }
 
-#redeem-item, #last-spin, #current-points {
+#redeem-item {
   float: left;
   width: 320px;
   height: 200px;
   text-align: center;
 }
 
+#redeem-item {
+  margin-top: 50px;
+}
+
+#last-spin {
+  float: left;
+  padding: 30px;
+  width: 280px;
+  height: 140px;
+  text-align: center;
+}
+
+#last-spin div {
+  padding: 20px;
+}
+
+#last-spin h2 {
+  text-align: left;
+  font-size: 19px;
+  margin: 0;
+}
+
+#last-spin h3 {
+  font-size: 35px;
+  margin: 0;
+}
+
 #current-points {
   font-size: 23px;
   font-weight: bold;
+  width: 200px;
+  float: right;
+  text-align: center;
 }
 
 #current-points span {

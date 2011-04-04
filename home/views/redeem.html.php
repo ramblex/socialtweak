@@ -22,7 +22,7 @@
   <div id="last-spin">
     <h2>Last spin:</h2>
     <div>
-      <h3>You've got "<span>use 100</span>"!</h3>
+      <h3>You've got: "<span>use 100</span>"!</h3>
       <p>You are now using 100 more points on this item</p>
     </div>
     <p>The more points you use on this item, the more chances you have to win!</p>

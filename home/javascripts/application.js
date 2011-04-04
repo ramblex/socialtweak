@@ -45,7 +45,6 @@ $(document).ready(function() {
     }
 
     function rotate(items, stopIdx) {
-      var speed = 30;
       var num_rotations_to_do = Math.random() * 450;
       var num_rotations_done = 0;
       var intervalId = setInterval(function() {
