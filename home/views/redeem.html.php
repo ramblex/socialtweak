@@ -1,17 +1,17 @@
-<ul id="wheel">
-  <li>Use <span>100</span> points</li>
-  <li>Game over</li>
-  <li>0</li>
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-</ul>
-<a href="#" id="spin">Spin</a>
+<div id="spinner">
+  <ul id="wheel">
+    <li class="blue">Use <span>100</span> points</li>
+    <li class="pink">0</li>
+    <li class="green">2</li>
+    <li class="blue">Use <span>100</span> points</li>
+    <li class="pink">3</li>
+    <li class="green">4</li>
+    <li class="red">Game over</li>
+    <li class="blue">Use <span>100</span> points</li>
+    <li class="green">5</li>
+  </ul>
+  <a href="#" id="spin"><span>Spin</span> for 5 points</a>
+</div>
 
 <section id="redeem-content">
   <div id="redeem-item">
