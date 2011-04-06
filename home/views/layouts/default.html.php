@@ -13,18 +13,18 @@
     <script type="text/javascript" src="javascripts/jquery.path.js"></script>
     <script type="text/javascript" src="javascripts/application.js"></script>
     <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
     <header>
       <a href="/"><h1>SocialTweak</h1></a>
-      <nav>
+      <ul id="nav">
         <li><a href="/home" class="selected">Home</a></li>
         <li><a href="/social">Social</a></li>
         <li><a href="/entertainment">Entertainment</a></li>
         <li><a href="/rewards">Rewards</a></li>
-      </nav>
+      </ul>
     </header>
 
     <div id="content">
