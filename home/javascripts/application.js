@@ -36,38 +36,34 @@ $(document).ready(function() {
         }, 60000);
     }
 
-    // Wheel
-    function getXPos(angle) {
-      return left_offset + (radius * Math.cos(angle * (Math.PI / 180)));
-    }
-    function getYPos(angle) {
-      return bottom_offset + (radius * Math.sin(angle * (Math.PI / 180)));
-    }
+      // Wheel
+      var slots = $('#wheel li');
+      var separation = Math.floor(360 / slots.length);
+      var num_rotations = 10;
 
-    function rotate(items, stopIdx) {
-      var num_rotations_to_do = Math.random() * 450;
-      var num_rotations_done = 0;
-      var intervalId = setInterval(function() {
-        num_rotations_done += 1;
-        items.each(function() {
-          var angle = parseInt($(this).attr('angle'));
-          var bottom = parseInt(getYPos(angle));
-          $(this).css({
-            'left': getXPos(angle)+'px',
-            'bottom': bottom+'px',
-            '-webkit-transform': 'rotate('+-(angle + 90)+'deg)',
-            '-moz-transform': 'rotate('+-(angle + 90)+'deg)'
-          });
-          $(this).attr('angle', angle + 5);
-          if (items.index(this) == stopIdx) {
-            if (num_rotations_done > num_rotations_to_do && bottom == 50) {
-              clearInterval(intervalId);
-              $('#last-spin h3 span').text($(this).text());
-              init_spin(items);
-            }
-          }
+      function rotate_slot(slot_idx, slot_offset, time) {
+        var start_angle = slot_idx * separation;
+        var arc_params = {
+          center: [250,-25],
+          radius: 150,
+          dir: 1,
+          start: start_angle,
+          end: start_angle + (360 * num_rotations) + (slot_offset * separation)
+        };
+        $(slots.get(slot_idx)).animate({ path: new $.path.arc(arc_params) }, time);
+      }
+
+      slots.each(function(slot_idx) {
+        rotate_slot(slot_idx, 0, 0);
+      });
+
+      $('#wheel').click(function() {
+        var selected_slot = Math.floor(Math.random() * slots.length);
+        slots.each(function(slot_idx) {
+          rotate_slot(slot_idx, selected_slot, 10000);
         });
-      }, 13);
+        $(this).unbind();
+      });
     }
 
     function init_spin(items) {
