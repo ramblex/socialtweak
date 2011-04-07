@@ -521,6 +521,12 @@ nav li a {
 }
 
 /* Redeem */
+#spinner {
+  width: 787px;
+  position: relative;
+  margin: 0 auto;
+}
+
 #wheel {
   width: 787px;
   height: 205px;
@@ -528,41 +534,121 @@ nav li a {
   position: relative;
   background: url(../images/wheel.png) no-repeat;
   overflow: hidden;
+  padding-left: 0;
 }
 
 #wheel li {
-  background: gray;
-  width: 95px;
-  height: 95px;
+  width: 90px;
+  height: 90px;
   list-style: none;
   text-align: center;
-  padding: 15px;
-  display: table-cell;
+  padding: 20px;
   vertical-align: middle;
-  font-size: 21px;
+  font-size: 24px;
   line-height: 0.9;
   font-weight: bold;
+  background: url(../images/wheel-slots.png) no-repeat;
+}
+
+#wheel li.red {
+  background-position: -390px 0;
+}
+
+#wheel li.pink {
+  background-position: -260px 0;
+}
+
+#wheel li.green {
+  background-position: -130px 0;
 }
 
 #wheel li span {
   font-size: 40px;
 }
 
+#spin {
+  position: absolute;
+  display: block;
+  width: 100px;
+  top: 90px;
+  right: 40px;
+  height: 100px;
+  padding: 30px;
+  background: red;
+  cursor: pointer;
+  background: url(../images/spin-btn.png);
+  text-align: center;
+  color: black;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 19px;
+  letter-spacing: -1px;
+}
+
+#spin span {
+  font-size: 24px;
+  display: block;
+  margin-top: 25px;
+  line-height: 0.9;
+}
+
+#spin:active {
+  padding-top: 32px;
+  height: 98px;
+}
+
+#spin.inactive {
+  color: #6e241a;
+}
+
 #redeem-content {
   width: 960px;
   margin: 50px auto 0 auto;
+  font-weight: bold;
+  font-size: 16px;
+  height: 300px;
 }
 
-#redeem-item, #last-spin, #current-points {
+#redeem-item {
   float: left;
   width: 320px;
   height: 200px;
   text-align: center;
 }
 
+#redeem-item {
+  margin-top: 50px;
+}
+
+#last-spin {
+  float: left;
+  padding: 30px;
+  width: 280px;
+  height: 140px;
+  text-align: center;
+}
+
+#last-spin div {
+  padding: 20px;
+}
+
+#last-spin h2 {
+  text-align: left;
+  font-size: 19px;
+  margin: 0;
+}
+
+#last-spin h3 {
+  font-size: 35px;
+  margin: 0;
+}
+
 #current-points {
   font-size: 23px;
   font-weight: bold;
+  width: 200px;
+  float: right;
+  text-align: center;
 }
 
 #current-points span {

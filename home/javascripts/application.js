@@ -45,7 +45,6 @@ $(document).ready(function() {
     }
 
     function rotate(items, stopIdx) {
-      var speed = 30;
       var num_rotations_to_do = Math.random() * 450;
       var num_rotations_done = 0;
       var intervalId = setInterval(function() {
@@ -64,15 +63,30 @@ $(document).ready(function() {
             if (num_rotations_done > num_rotations_to_do && bottom == 50) {
               clearInterval(intervalId);
               $('#last-spin h3 span').text($(this).text());
+              init_spin(items);
             }
           }
         });
       }, 13);
     }
 
+    function init_spin(items) {
+      $("#spin").unbind();
+      $("#spin").removeClass('inactive');
+      $('#spin').click(function() {
+        rotate(items, Math.floor(Math.random() * items.length));
+        $(this).addClass('inactive');
+        $(this).unbind();
+        $(this).click(function() {
+          return false;
+        });
+        return false;
+      });
+    }
+
     var wheel_width = $('#wheel').width();
     var items = $('#wheel li');
-    var radius = (wheel_width / 2);
+    var radius = Math.floor(wheel_width / 2);
     var left_offset = radius - ($(items[0]).outerWidth() / 2);
     var bottom_offset = radius + 50;
     var angle = -90;
@@ -88,10 +102,7 @@ $(document).ready(function() {
       });
       angle += (360 / items.length);
     });
-    $('#spin').click(function() {
-      rotate(items, Math.floor(Math.random() * items.length));
-      return false;
-    });
+    init_spin(items);
   }
 
   $.history.init(function(page) {
