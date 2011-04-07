@@ -36,69 +36,60 @@ $(document).ready(function() {
         }, 60000);
     }
 
-      // Wheel
-      var slots = $('#wheel li');
-      var separation = Math.floor(360 / slots.length);
-      var num_rotations = 10;
+    // Wheel
+    var radius = Math.floor($('#wheel').width() / 2);
+    var slots = $('#wheel li');
+    var center = [(radius - ($(slots[0]).outerWidth() / 2)), -350];
+    // Angle separation between slots in degrees
+    var separation = Math.floor(360 / slots.length);
+    var num_rotations = 10;
+    var spin_duration = 10000; // in ms
+    var selected_slot = 0;
+    var start_offset = 0;
+    var spinning = false;
 
-      function rotate_slot(slot_idx, slot_offset, time) {
-        var start_angle = slot_idx * separation;
+    function rotate_slots(slot_offset, time, callback_func) {
+      slots.each(function(slot_idx) {
+        var start_angle = (slot_idx * separation) + start_offset;
         var arc_params = {
-          center: [250,-25],
-          radius: 150,
+          center: center,
+          radius: radius,
           dir: 1,
           start: start_angle,
           end: start_angle + (360 * num_rotations) + (slot_offset * separation)
         };
-        $(slots.get(slot_idx)).animate({ path: new $.path.arc(arc_params) }, time);
+        $(this).animate({ path: new $.path.arc(arc_params) }, time, callback_func);
+      });
+      // If we spin again make sure that we start the slots from the correct places
+      start_offset += (slot_offset * separation);
+    }
+
+    function spin_stopped() {
+      // This function gets called when each slot stops its animation. Make sure we only replace
+      // the text once.
+      if (spinning === false) {
+        $('#last-spin h3 span').text($(slots.get(selected_slot)).text());
+        $('#spin').removeClass('inactive');
+      } else {
+        spinning = false;
       }
-
-      slots.each(function(slot_idx) {
-        rotate_slot(slot_idx, 0, 0);
-      });
-
-      $('#wheel').click(function() {
-        var selected_slot = Math.floor(Math.random() * slots.length);
-        slots.each(function(slot_idx) {
-          rotate_slot(slot_idx, selected_slot, 10000);
-        });
-        $(this).unbind();
-      });
     }
 
-    function init_spin(items) {
-      $("#spin").unbind();
-      $("#spin").removeClass('inactive');
-      $('#spin').click(function() {
-        rotate(items, Math.floor(Math.random() * items.length));
+    // Initialize slot positions
+    rotate_slots(0, 0, null);
+
+    $('#spin').click(function() {
+      if (spinning === false) {
+        // TODO: Replace with ajax call
+        var get_slot_id = Math.floor(Math.random() * slots.length);
+        slot_offset = selected_slot - get_slot_id;
+        selected_slot = get_slot_id;
+        rotate_slots(slot_offset, spin_duration, spin_stopped);
         $(this).addClass('inactive');
-        $(this).unbind();
-        $(this).click(function() {
-          return false;
-        });
-        return false;
-      });
-    }
-
-    var wheel_width = $('#wheel').width();
-    var items = $('#wheel li');
-    var radius = Math.floor(wheel_width / 2);
-    var left_offset = radius - ($(items[0]).outerWidth() / 2);
-    var bottom_offset = radius + 50;
-    var angle = -90;
-    items.each(function() {
-      $(this).attr('angle', angle);
-      $(this).css({
-        'position': 'absolute',
-        'left': getXPos(angle),
-        'bottom': getYPos(angle),
-        '-webkit-transform': 'rotate('+-(angle + 90)+'deg)',
-        '-moz-transform': 'rotate('+-(angle + 90)+'deg)',
-        'z-index': 0
-      });
-      angle += (360 / items.length);
+        spinning = true;
+      }
+      return false;
     });
-    init_spin(items);
   }
 
   $.history.init(function(page) {

@@ -55,8 +55,7 @@
        var y = Math.cos(a) * this.radius + this.center[1]
        return {
         top: y + "px",
-        left: x + "px",
-        '-webkit-transform': 'rotate('+-a+'rad)'
+        left: x + "px"
       }
      } 
 
