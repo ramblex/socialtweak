@@ -59,7 +59,7 @@ header {
   font-weight: 550;
   height: 83px;
   padding-bottom: 7px;
-  background: url(../images/header.png) repeat-x bottom left;
+  background: url(/images/header.png) repeat-x bottom left;
   display: block;
 }
 
@@ -72,7 +72,7 @@ h1 {
   outline: 0;
   width: 265px;
   height: 52px;
-  background: url(../images/Logo.png);
+  background: url(/images/Logo.png);
 }
 
 nav {
@@ -110,7 +110,7 @@ nav li a {
   width: 200px;
   height: 193px;
   padding: 12px 10px 10px 12px;
-  background: url(../images/profile-bg.png);
+  background: url(/images/profile-bg.png);
   float: left;
 }
 
@@ -146,11 +146,11 @@ nav li a {
 }
 
 #status-post .tweet-button {
-  background: url(../images/tweet.png);
+  background: url(/images/tweet.png);
 }
 
 #status-post .post-button {
-  background: url(../images/post.png);
+  background: url(/images/post.png);
 }
 
 #status-msg {
@@ -162,14 +162,14 @@ nav li a {
   padding-top: 20px;
   text-align: center;
   margin-bottom: 8px;
-  background: url(../images/status-msg.png);
+  background: url(/images/status-msg.png);
   font-size: 16px;
 }
 
 #status-post .status-input {
   float: left;
   width: 570px;
-  background: url(../images/statuscontainer.png);
+  background: url(/images/statuscontainer.png);
   margin-right: 10px;
   padding: 15px;
   height: 135px;
@@ -201,7 +201,7 @@ nav li a {
   clear: left;
   width: 915px;
   height: 431px;
-  background: url(../images/frame.png) no-repeat;
+  background: url(/images/frame.png) no-repeat;
   padding: 1px 90px 0 95px;
   margin: 0 auto;
 }
@@ -219,7 +219,7 @@ nav li a {
   height: 50px;
   line-height: 50px;
   display: block;
-  background: url(../images/spine.png) no-repeat #1d1d1d;
+  background: url(/images/spine.png) no-repeat #1d1d1d;
   position: relative;
   color: white;
   padding: 0 20px;
@@ -255,7 +255,7 @@ nav li a {
 
 .frame .content {
   padding: 1px 30px;
-  background: url(../images/frame-bg.png) repeat-y;
+  background: url(/images/frame-bg.png) repeat-y;
   margin: 35px -10px 0 -15px;
   min-height: 150px; /* Without this the .frame and .frame .footer backgrounds would collide */
   width: 940px;
@@ -307,7 +307,7 @@ nav li a {
 /* This essentially moves the bottom of the frame background to the correct place */
 .frame .footer {
   margin: -100px 0 30px -95px;
-  background: url(../images/frame.png) no-repeat left bottom;
+  background: url(/images/frame.png) no-repeat left bottom;
   height: 200px;
   width: 1100px;
 }
@@ -322,7 +322,7 @@ nav li a {
 .button-block li {
   float: left;
   margin-right: 15px;
-  background: url(../images/button-block.png) no-repeat;
+  background: url(/images/button-block.png) no-repeat;
   height: 30px;
   padding-left: 10px;
   margin-right: 20px;
@@ -336,7 +336,7 @@ nav li a {
   color: white;
   margin-right: -10px;
   font-size: 11.5px;
-  background: url(../images/button-block.png) no-repeat top right;
+  background: url(/images/button-block.png) no-repeat top right;
   font-weight: bold;
 }
 
@@ -377,7 +377,7 @@ nav li a {
 #current-container {
   margin-top: 70px;
   height: 370px;
-  background: url(../images/current-game.png) repeat-x;
+  background: url(/images/current-game.png) repeat-x;
 }
 
 #current-game, #current-video {
@@ -478,7 +478,7 @@ nav li a {
 
 #counter li span {
   color: white;
-  background: url(../images/counter.png) no-repeat;
+  background: url(/images/counter.png) no-repeat;
   display: table-cell;
   width: 88px;
   height: 80px;
@@ -494,7 +494,7 @@ nav li a {
   height: 50px;
   margin: 40px auto;
   display: block;
-  background: url(../images/rewards-banner.png) no-repeat;
+  background: url(/images/rewards-banner.png) no-repeat;
 }
 
 #reward-items {
@@ -532,7 +532,7 @@ nav li a {
   height: 205px;
   margin: -7px auto 0 auto;
   position: relative;
-  background: url(../images/wheel.png) no-repeat;
+  background: url(/images/wheel.png) no-repeat;
   overflow: hidden;
   padding-left: 0;
 }
@@ -546,7 +546,7 @@ nav li a {
   vertical-align: middle;
   font-size: 24px;
   font-weight: bold;
-  background: url(../images/wheel-slots.png) no-repeat;
+  background: url(/images/wheel-slots.png) no-repeat;
   position: absolute;
 }
 
@@ -585,7 +585,7 @@ nav li a {
   padding: 30px;
   background: red;
   cursor: pointer;
-  background: url(../images/spin-btn.png);
+  background: url(/images/spin-btn.png);
   text-align: center;
   color: black;
   vertical-align: middle;
@@ -668,7 +668,7 @@ footer {
   left: 0;
   color: white;
   font-weight: 550;
-  background: url(../images/openfooter.png) repeat-x;
+  background: url(/images/openfooter.png) repeat-x;
   letter-spacing: -0.8px;
   width: 100%;
 }
@@ -719,7 +719,7 @@ footer a {
 
 #settings {
   float: right;
-  background: url(../images/footer-arrow.png) no-repeat top right;
+  background: url(/images/footer-arrow.png) no-repeat top right;
   padding-right: 20px;
 }
 
@@ -750,7 +750,7 @@ footer a {
   margin: 0 auto 5px auto;
   width: 186px;
   height: 12px;
-  background: url(../images/progress-bar-bg.png) no-repeat;
+  background: url(/images/progress-bar-bg.png) no-repeat;
   padding: 1px 3px 2px 1px;
   font-size: 12px;
   line-height: 15px;
@@ -794,11 +794,11 @@ footer a {
 }
 
 #quick-post .post-button {
-  background: url(../images/small-post.png);
+  background: url(/images/small-post.png);
 }
 
 #quick-post .tweet-button {
-  background: url(../images/small-tweet.png) no-repeat;
+  background: url(/images/small-tweet.png) no-repeat;
 }
 
 /* Account, Logout, Choose background */
@@ -829,7 +829,7 @@ footer a {
 
 /* Show a spinning image when loading a new page using ajax */
 #loading {
-  background: url(../images/ajax-loader.gif) no-repeat;
+  background: url(/images/ajax-loader.gif) no-repeat;
   width: 200px;
   height: 32px;
   margin: 30px auto;

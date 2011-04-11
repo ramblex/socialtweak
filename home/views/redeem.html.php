@@ -42,7 +42,7 @@
 
 <section id="redeem-content">
   <div class="redeem-content">
-    <img src="images/macbook-pro.png" alt="Macbook Pro" />
+    <img src="/images/macbook-pro.png" alt="Macbook Pro" />
     <p>You are playing for a MacBook Pro</p>
   </div>
 

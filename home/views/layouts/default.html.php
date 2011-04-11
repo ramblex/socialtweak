@@ -3,15 +3,15 @@
   <head>
     <title>SocialTweak</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <link href="css/screen.css" rel="stylesheet" type="text/css" />
+    <link href="/css/screen.css" rel="stylesheet" type="text/css" />
     <!--[if IE 7]>
       <link href="css/ie7.css" rel="stylesheet" type="text/css" />
     <![endif]-->
-    <script type="text/javascript" src="javascripts/jquery.js"></script>
-    <script type="text/javascript" src="javascripts/slidedeck.jquery.lite.js"></script>
-    <script type="text/javascript" src="javascripts/jquery.history.js"></script>
-    <script type="text/javascript" src="javascripts/jquery.path.js"></script>
-    <script type="text/javascript" src="javascripts/application.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.js"></script>
+    <script type="text/javascript" src="/javascripts/slidedeck.jquery.lite.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.history.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.path.js"></script>
+    <script type="text/javascript" src="/javascripts/application.js"></script>
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -60,9 +60,9 @@
             <li><a href="#">Logout</a></li>
             <li>Choose a background:</li>
             <li id="choose-background">
-              <a href="#" id="grass"><img src="images/select-grass.png" alt="Grass background" /></a>
-              <a href="#" id="water"><img src="images/select-water.png" alt="Water background" /></a>
-              <a href="#" id="wood"><img src="images/select-wood.png" alt="Wood background" /></a>
+              <a href="#" id="grass"><img src="/images/select-grass.png" alt="Grass background" /></a>
+              <a href="#" id="water"><img src="/images/select-water.png" alt="Water background" /></a>
+              <a href="#" id="wood"><img src="/images/select-wood.png" alt="Wood background" /></a>
             </li>
           </ul>
         </div> <!-- end right-open-footer -->
