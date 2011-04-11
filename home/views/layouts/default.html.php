@@ -7,7 +7,7 @@
     <!--[if IE 7]>
       <link href="css/ie7.css" rel="stylesheet" type="text/css" />
     <![endif]-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
     <script type="text/javascript" src="javascripts/slidedeck.jquery.lite.js"></script>
     <script type="text/javascript" src="javascripts/jquery.history.js"></script>
     <script type="text/javascript" src="javascripts/jquery.path.js"></script>

@@ -54,8 +54,8 @@
        var x = Math.sin(a) * this.radius + this.center[0]
        var y = Math.cos(a) * this.radius + this.center[1]
        return {
-        top: y + "px",
-        left: x + "px"
+        'top': y + "px",
+        'left': x + "px",
       }
      } 
 

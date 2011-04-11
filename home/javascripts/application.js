@@ -68,7 +68,9 @@ $(document).ready(function() {
       // This function gets called when each slot stops its animation. Make sure we only replace
       // the text once.
       if (spinning === false) {
-        $('#last-spin h3 span').text($(slots.get(selected_slot)).text());
+        var slot = slots.get(selected_slot);
+        $('#last-spin h3 span').text($('p', slot).text());
+        $('#last-spin div p').text($('span', slot).text());
         $('#spin').removeClass('inactive');
       } else {
         spinning = false;
