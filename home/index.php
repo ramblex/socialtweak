@@ -8,10 +8,15 @@ function before()
   layout('layouts/default.html.php');
 }
 
-dispatch('/home', 'index');
-
 dispatch('/', 'index');
   function index()
+  {
+    layout('');
+    return html('splash.html.php');
+  }
+
+dispatch('/home', 'home');
+  function home()
   {
     return html('index.html.php');
   }

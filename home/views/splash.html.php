@@ -3,12 +3,12 @@
   <head>
     <title>SocialTweak</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <link href="css/screen.css" rel="stylesheet" type="text/css" />
+    <link href="/css/splash.css" rel="stylesheet" type="text/css" />
     <!--[if IE 7]>
-      <link href="css/ie7.css" rel="stylesheet" type="text/css" />
+      <link href="/css/splash-ie7.css" rel="stylesheet" type="text/css" />
     <![endif]-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/jquery.roundabout.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.roundabout.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
 
@@ -94,11 +94,11 @@
         <h2>Getting social, in a whole new way</h2>
         <div id="roundabout">
           <ul>
-            <li><img src="images/slides/1wel.jpg" alt="Welcome" width="524" height="318" /></li>
-            <li><img src="images/slides/2gamesslide.jpg" alt="Games" width="524" height="318" /></li>
-            <li><img src="images/slides/3videoslide.jpg" alt="Videos" width="524" height="318" /></li>
-            <li><img src="images/slides/4musicslide.jpg" alt="Music" width="524" height="318" /></li>
-            <li><img src="images/slides/5auctions.jpg" alt="Auctions" width="524" height="318" /></li>
+            <li><img src="/images/splash/slides/1wel.jpg" alt="Welcome" width="524" height="318" /></li>
+            <li><img src="/images/splash/slides/2gamesslide.jpg" alt="Games" width="524" height="318" /></li>
+            <li><img src="/images/splash/slides/3videoslide.jpg" alt="Videos" width="524" height="318" /></li>
+            <li><img src="/images/splash/slides/4musicslide.jpg" alt="Music" width="524" height="318" /></li>
+            <li><img src="/images/splash/slides/5auctions.jpg" alt="Auctions" width="524" height="318" /></li>
           </ul>
         </div> <!-- end roundabout -->
         <div id="dots"></div>

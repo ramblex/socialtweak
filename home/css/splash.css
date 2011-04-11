@@ -39,7 +39,7 @@ a:hover {
   font-weight: 550;
   height: 83px;
   padding-bottom: 7px;
-  background: url(../images/header.png) repeat-x bottom left;
+  background: url(/images/splash/header.png) repeat-x bottom left;
   display: block;
 }
 
@@ -52,7 +52,7 @@ h1 {
   outline: 0;
   width: 265px;
   height: 52px;
-  background: url(../images/Logo.png);
+  background: url(/images/splash/Logo.png);
   cursor: pointer;
 }
 
@@ -112,7 +112,7 @@ h1 {
   margin-top: 8px;
   width: 125px;
   height: 33px;
-  background: url(../images/login-btn.png);
+  background: url(/images/splash/login-btn.png);
   display: block;
   padding: 0;
   border: 0;
@@ -135,7 +135,7 @@ h1 {
   margin: 50px auto 10px auto;
   font-size: 30px;
   text-indent: -30000px;
-  background: url(../images/banner.png) no-repeat;
+  background: url(/images/splash/banner.png) no-repeat;
   height: 100px;
 }
 
@@ -185,7 +185,7 @@ h1 {
   width: 16px;
   height: 16px;
   display: block;
-  background: url(../images/dot.png) no-repeat;
+  background: url(/images/splash/dot.png) no-repeat;
 }
 
 #dots li a:hover, #dots li.selected a {
@@ -193,11 +193,11 @@ h1 {
 }
 
 #next a {
-  background: url(../images/right-small.png) no-repeat top right !important;
+  background: url(/images/splash/right-small.png) no-repeat top right !important;
 }
 
 #previous a {
-  background: url(../images/left-small.png) no-repeat !important;
+  background: url(/images/splash/left-small.png) no-repeat !important;
 }
 
 
@@ -209,7 +209,7 @@ h1 {
   clear: both;
   position: relative;
   color: white;
-  background: url(../images/footer.png) repeat-x;
+  background: url(/images/splash/footer.png) repeat-x;
 }
 
 #footer a {
@@ -257,16 +257,16 @@ h1 {
 }
 
 #facebook {
-  background: url(../images/facebook.png);
+  background: url(/images/splash/facebook.png);
 }
 
 #twitter {
-  background: url(../images/twitter.png);
+  background: url(/images/splash/twitter.png);
 }
 
 /* contact, about, terms */
 #misc {
-  background: url(../images/faded-logo.png) no-repeat 0 100px;
+  background: url(/images/splash/faded-logo.png) no-repeat 0 100px;
 }
 
 #misc ul {

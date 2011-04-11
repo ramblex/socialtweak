@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <link href="/css/screen.css" rel="stylesheet" type="text/css" />
     <!--[if IE 7]>
-      <link href="css/ie7.css" rel="stylesheet" type="text/css" />
+      <link href="/css/ie7.css" rel="stylesheet" type="text/css" />
     <![endif]-->
     <script type="text/javascript" src="/javascripts/jquery.js"></script>
     <script type="text/javascript" src="/javascripts/slidedeck.jquery.lite.js"></script>
