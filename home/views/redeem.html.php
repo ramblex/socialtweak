@@ -42,8 +42,8 @@
 
 <section id="redeem-content">
   <div class="redeem-content">
-    <img src="/images/macbook-pro.png" alt="Macbook Pro" />
-    <p>You are playing for a MacBook Pro</p>
+    <img src="/images/<?php echo $reward['img'] ?>" alt="<?php echo $reward['name'] ?>" />
+    <p>You are playing for a <?php echo $reward['name'] ?></p>
   </div>
 
   <div id="last-spin" class="redeem-content">

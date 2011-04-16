@@ -70,14 +70,15 @@ dispatch('/videos', 'videos');
     return html('videos.html.php');
   }
 
+$reward_list = array(
+  array('id' => 0, 'name' => 'Macbook Pro', 'participants' => 100, 'img' => 'macbook-pro.png'),
+  array('id' => 1, 'name' => 'Extra point bar for one week', 'participants' => 1029, 'img' => 'extra-point-bar.png')
+);
 
 dispatch('/rewards', 'rewards');
   function rewards()
   {
-    $reward_list = array(
-      array('id' => 1, 'name' => 'Macbook Pro', 'participants' => 100, 'img' => 'macbook-pro.png'),
-      array('id' => 2, 'name' => 'Extra point bar for one week', 'participants' => 1029, 'img' => 'extra-point-bar.png')
-    );
+    global $reward_list;
     set('reward_list', $reward_list);
     return html('rewards.html.php');
   }
@@ -85,7 +86,16 @@ dispatch('/rewards', 'rewards');
 dispatch('/redeem/:reward_id', 'redeem');
   function redeem()
   {
-    return html('redeem.html.php');
+    global $reward_list;
+    if (params('reward_id') < count($reward_list))
+    {
+      set('reward', $reward_list[params('reward_id')]);
+      return html('redeem.html.php');
+    }
+    else
+    {
+      halt(NOT_FOUND, 'reward does not exist.');
+    }
   }
 
 run();
