@@ -4,10 +4,10 @@ $(document).ready(function() {
 
   // Javascript that affects #content
   function init_content(page) {
-    $("nav a, #thumbnails a, #reward-items a").click(function() {
+    $("nav a, #thumbnails a, #rewards a").click(function() {
       var url = $(this).attr('href');
       url = url.replace(/^\//, '');
-      $('#content').prepend('<div id="loading"><img src="images/ajax-loader.gif" width="40">Loading...</div>');
+      $('#content').prepend('<div id="loading"><img src="/images/ajax-loader.gif" width="40">Loading...</div>');
       $.history.load(url);
       $('#loading').fadeOut();
       return false;
@@ -68,7 +68,9 @@ $(document).ready(function() {
       // This function gets called when each slot stops its animation. Make sure we only replace
       // the text once.
       if (spinning === false) {
-        $('#last-spin h3 span').text($(slots.get(selected_slot)).text());
+        var slot = slots.get(selected_slot);
+        $('#last-spin h3 span').text($('p', slot).text());
+        $('#last-spin div p').text($('span', slot).text());
         $('#spin').removeClass('inactive');
       } else {
         spinning = false;
@@ -103,9 +105,9 @@ $(document).ready(function() {
     $("#open-footer").slideToggle('fast', function() {
       // Switch the footer arrow
       if ($(this).is(':hidden')) {
-        $("#settings").css('background-image', 'url(images/footer-arrow.png)');
+        $("#settings").css('background-image', 'url(/images/footer-arrow.png)');
       } else {
-        $("#settings").css('background-image', 'url(images/footer-arrow-down.png)');
+        $("#settings").css('background-image', 'url(/images/footer-arrow-down.png)');
       }
     });
     return false;
@@ -132,7 +134,7 @@ $(document).ready(function() {
     if (name == "white") {
       options += " no-repeat";
     }
-    $('body').css('background-image', 'url(images/backgrounds/'+name+'.png)' + options);
+    $('body').css('background-image', 'url(/images/backgrounds/'+name+'.png)' + options);
     return false;
   });
 

@@ -59,7 +59,7 @@ header {
   font-weight: 550;
   height: 83px;
   padding-bottom: 7px;
-  background: url(../images/header.png) repeat-x bottom left;
+  background: url(/images/header.png) repeat-x bottom left;
   display: block;
 }
 
@@ -72,7 +72,7 @@ h1 {
   outline: 0;
   width: 265px;
   height: 52px;
-  background: url(../images/Logo.png);
+  background: url(/images/Logo.png);
 }
 
 #nav {
@@ -111,7 +111,7 @@ h1 {
   width: 200px;
   height: 193px;
   padding: 12px 10px 10px 12px;
-  background: url(../images/profile-bg.png);
+  background: url(/images/profile-bg.png);
   float: left;
 }
 
@@ -147,11 +147,11 @@ h1 {
 }
 
 #status-post .tweet-button {
-  background: url(../images/tweet.png);
+  background: url(/images/tweet.png);
 }
 
 #status-post .post-button {
-  background: url(../images/post.png);
+  background: url(/images/post.png);
 }
 
 #status-msg {
@@ -163,14 +163,14 @@ h1 {
   padding-top: 20px;
   text-align: center;
   margin-bottom: 8px;
-  background: url(../images/status-msg.png);
+  background: url(/images/status-msg.png);
   font-size: 16px;
 }
 
 #status-post .status-input {
   float: left;
   width: 570px;
-  background: url(../images/statuscontainer.png);
+  background: url(/images/statuscontainer.png);
   margin-right: 10px;
   padding: 15px;
   height: 135px;
@@ -202,7 +202,7 @@ h1 {
   clear: left;
   width: 915px;
   height: 431px;
-  background: url(../images/frame.png) no-repeat;
+  background: url(/images/frame.png) no-repeat;
   padding: 1px 90px 0 95px;
   margin: 0 auto;
 }
@@ -220,7 +220,7 @@ h1 {
   height: 50px;
   line-height: 50px;
   display: block;
-  background: url(../images/spine.png) no-repeat #1d1d1d;
+  background: url(/images/spine.png) no-repeat #1d1d1d;
   position: relative;
   color: white;
   padding: 0 20px;
@@ -256,7 +256,7 @@ h1 {
 
 .frame .content {
   padding: 1px 30px;
-  background: url(../images/frame-bg.png) repeat-y;
+  background: url(/images/frame-bg.png) repeat-y;
   margin: 35px -10px 0 -15px;
   min-height: 150px; /* Without this the .frame and .frame .footer backgrounds would collide */
   width: 940px;
@@ -308,7 +308,7 @@ h1 {
 /* This essentially moves the bottom of the frame background to the correct place */
 .frame .footer {
   margin: -100px 0 30px -95px;
-  background: url(../images/frame.png) no-repeat left bottom;
+  background: url(/images/frame.png) no-repeat left bottom;
   height: 200px;
   width: 1100px;
 }
@@ -323,7 +323,7 @@ h1 {
 .button-block li {
   float: left;
   margin-right: 15px;
-  background: url(../images/button-block.png) no-repeat;
+  background: url(/images/button-block.png) no-repeat;
   height: 30px;
   padding-left: 10px;
   margin-right: 20px;
@@ -337,7 +337,7 @@ h1 {
   color: white;
   margin-right: -10px;
   font-size: 11.5px;
-  background: url(../images/button-block.png) no-repeat top right;
+  background: url(/images/button-block.png) no-repeat top right;
   font-weight: bold;
 }
 
@@ -378,7 +378,7 @@ h1 {
 #current-container {
   margin-top: 70px;
   height: 370px;
-  background: url(../images/current-game.png) repeat-x;
+  background: url(/images/current-game.png) repeat-x;
 }
 
 #current-game, #current-video {
@@ -480,7 +480,7 @@ h1 {
 
 #counter li span {
   color: white;
-  background: url(../images/counter.png) no-repeat;
+  background: url(/images/counter.png) no-repeat;
   display: table-cell;
   width: 88px;
   height: 80px;
@@ -496,7 +496,7 @@ h1 {
   height: 50px;
   margin: 40px auto;
   display: block;
-  background: url(../images/rewards-banner.png) no-repeat;
+  background: url(/images/rewards-banner.png) no-repeat;
 }
 
 #reward-items {
@@ -534,22 +534,21 @@ h1 {
   height: 205px;
   margin: -7px auto 0 auto;
   position: relative;
-  background: url(../images/wheel.png) no-repeat;
+  background: url(/images/wheel.png) no-repeat;
   overflow: hidden;
   padding-left: 0;
 }
 
 #wheel li {
-  width: 90px;
-  height: 90px;
+  width: 110px;
+  height: 110px;
   list-style: none;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   vertical-align: middle;
   font-size: 24px;
-  line-height: 0.9;
   font-weight: bold;
-  background: url(../images/wheel-slots.png) no-repeat;
+  background: url(/images/wheel-slots.png) no-repeat;
   position: absolute;
 }
 
@@ -565,8 +564,17 @@ h1 {
   background-position: -130px 0;
 }
 
-#wheel li span {
+#wheel p {
+  margin: 0;
+  padding: 0;
+}
+
+#wheel strong {
   font-size: 40px;
+}
+
+#wheel li span {
+  display: none;
 }
 
 #spin {
@@ -579,7 +587,7 @@ h1 {
   padding: 30px;
   background: red;
   cursor: pointer;
-  background: url(../images/spin-btn.png);
+  background: url(/images/spin-btn.png);
   text-align: center;
   color: black;
   vertical-align: middle;
@@ -605,10 +613,52 @@ h1 {
 }
 
 #redeem-content {
-  width: 960px;
+  width: 1100px;
   margin: 50px auto 0 auto;
   font-weight: bold;
   font-size: 16px;
+  height: 300px;
+}
+
+.redeem-content {
+  width: 345px;
+  float: left;
+  height: 300px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+#last-spin {
+  width: 285px;
+  padding: 0 30px;
+}
+
+#last-spin h2 {
+  text-align: left;
+  font-size: 16px;
+  margin: 0;
+}
+
+#last-spin div {
+  background: #1d1d1d;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+}
+
+#last-spin h3 {
+  font-size: 40px;
+  font-weight: 550;
+  margin: 0;
+}
+
+#num-points {
+  font-size: 24px;
+}
+
+#num-points span {
+  display: block;
+  font-size: 65px;
 }
 
 /* Footer */
@@ -620,7 +670,7 @@ footer {
   left: 0;
   color: white;
   font-weight: 550;
-  background: url(../images/openfooter.png) repeat-x;
+  background: url(/images/openfooter.png) repeat-x;
   letter-spacing: -0.8px;
   width: 100%;
 }
@@ -671,7 +721,7 @@ footer a {
 
 #settings {
   float: right;
-  background: url(../images/footer-arrow.png) no-repeat top right;
+  background: url(/images/footer-arrow.png) no-repeat top right;
   padding-right: 20px;
 }
 
@@ -702,7 +752,7 @@ footer a {
   margin: 0 auto 5px auto;
   width: 186px;
   height: 12px;
-  background: url(../images/progress-bar-bg.png) no-repeat;
+  background: url(/images/progress-bar-bg.png) no-repeat;
   padding: 1px 3px 2px 1px;
   font-size: 12px;
   line-height: 15px;
@@ -746,11 +796,11 @@ footer a {
 }
 
 #quick-post .post-button {
-  background: url(../images/small-post.png);
+  background: url(/images/small-post.png);
 }
 
 #quick-post .tweet-button {
-  background: url(../images/small-tweet.png) no-repeat;
+  background: url(/images/small-tweet.png) no-repeat;
 }
 
 /* Account, Logout, Choose background */
@@ -781,7 +831,7 @@ footer a {
 
 /* Show a spinning image when loading a new page using ajax */
 #loading {
-  background: url(../images/ajax-loader.gif) no-repeat;
+  background: url(/images/ajax-loader.gif) no-repeat;
   width: 200px;
   height: 32px;
   margin: 30px auto;
