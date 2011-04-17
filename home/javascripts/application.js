@@ -4,13 +4,13 @@ $(document).ready(function() {
 
   // Javascript that affects #content
   function init_content(page) {
-    $("#nav a, #thumbnails a, #rewards a").click(function() {
+    $("#nav a, #thumbnails a, #rewards a").click(function(e) {
       var url = $(this).attr('href');
       url = url.replace(/^\//, '');
       $('#content').prepend('<div id="loading"><img src="/images/ajax-loader.gif" width="40">Loading...</div>');
       $.history.load(url);
       $('#loading').fadeOut();
-      return false;
+      e.preventDefault();
     });
 
     $('#slidedeck dd').wrapInner('<div class="content" />');
@@ -80,7 +80,7 @@ $(document).ready(function() {
     // Initialize slot positions
     rotate_slots(0, 0, null);
 
-    $('#spin').click(function() {
+    $('#spin').click(function(e) {
       if (spinning === false) {
         // TODO: Replace with ajax call
         var get_slot_id = Math.floor(Math.random() * slots.length);
@@ -90,7 +90,7 @@ $(document).ready(function() {
         $(this).addClass('inactive');
         spinning = true;
       }
-      return false;
+      e.preventDefault();
     });
   }
 
@@ -101,7 +101,7 @@ $(document).ready(function() {
   });
 
   $("#open-footer").hide();
-  $("#settings").click(function() {
+  $("#settings").click(function(e) {
     $("#open-footer").slideToggle('fast', function() {
       // Switch the footer arrow
       if ($(this).is(':hidden')) {
@@ -110,7 +110,7 @@ $(document).ready(function() {
         $("#settings").css('background-image', 'url(/images/footer-arrow-down.png)');
       }
     });
-    return false;
+    e.preventDefault();
   });
 
   // Progress bar
@@ -128,14 +128,14 @@ $(document).ready(function() {
   });
 
   // Background chooser
-  $("#choose-background a").click(function() {
+  $("#choose-background a").click(function(e) {
     var name = $(this).attr('id');
     var options = "";
     if (name == "white") {
       options += " no-repeat";
     }
     $('body').css('background-image', 'url(/images/backgrounds/'+name+'.png)' + options);
-    return false;
+    e.preventDefault();
   });
 
 });
