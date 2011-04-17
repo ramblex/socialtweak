@@ -39,3 +39,8 @@
   width: 200px;
   margin-left: -35px;
 }
+
+#counter li span {
+  display: block;
+  padding-top: 10px;
+}

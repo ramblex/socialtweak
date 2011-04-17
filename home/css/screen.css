@@ -439,7 +439,6 @@ h1 {
 #rewards {
   width: 960px;
   margin: 0 auto;
-  background: red;
 }
 
 #rewards a {
@@ -532,7 +531,7 @@ h1 {
 #wheel {
   width: 787px;
   height: 205px;
-  margin: -7px auto 0 auto;
+  margin: -7px auto 50px auto;
   position: relative;
   background: url(/images/wheel.png) no-repeat;
   overflow: hidden;
