@@ -44,3 +44,14 @@
   display: block;
   padding-top: 10px;
 }
+
+#spin {
+  padding-top: 55px;
+  height: 75px;
+}
+
+.redeem-content {
+  padding-top: 50px !important;
+  width: 343px;
+  font-weight: bold;
+}

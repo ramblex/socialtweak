@@ -7,14 +7,14 @@
     <!--[if IE 7]>
       <link href="/css/ie7.css" rel="stylesheet" type="text/css" />
     <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <script type="text/javascript" src="/javascripts/jquery.js"></script>
     <script type="text/javascript" src="/javascripts/slidedeck.jquery.lite.js"></script>
     <script type="text/javascript" src="/javascripts/jquery.history.js"></script>
     <script type="text/javascript" src="/javascripts/jquery.path.js"></script>
     <script type="text/javascript" src="/javascripts/application.js"></script>
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
   <body>
     <header>
