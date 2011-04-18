@@ -741,7 +741,6 @@ footer a {
   letter-spacing: -0.5px;
   right: 20px;
   margin: 50px 0;
-  display: none;
 }
 
 #progress h3 {
@@ -760,6 +759,7 @@ footer a {
   padding: 0 0 30px 25px;
   text-align: center;
   background: url(/images/progress.png) no-repeat bottom;
+  display: none;
 }
 
 #progress ul li {
@@ -781,9 +781,9 @@ footer a {
   height: 34px;
   line-height: 1;
   font-weight: normal;
-  margin: 0;
   padding: 0;
   letter-spacing: 0px;
+  margin: -28px 0 0 0;
 }
 
 #progress li h4 span {
@@ -799,7 +799,7 @@ footer a {
   background: url(/images/current-progress.png) no-repeat;
   display: block;
   height: 32px;
-  margin: -38px 0 0 0;
+  margin-top: -3px;
 }
 
 #quick-post {

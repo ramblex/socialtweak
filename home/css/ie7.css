@@ -35,11 +35,6 @@
   text-transform: capitalize;
 }
 
-#progress {
-  width: 200px;
-  margin-left: -35px;
-}
-
 #counter li span {
   display: block;
   padding-top: 10px;
@@ -54,4 +49,25 @@
   padding-top: 50px !important;
   width: 343px;
   font-weight: bold;
+}
+
+#progress ul {
+  width: 407px;
+}
+
+#progress ul li {
+  margin-left: 12px;
+}
+
+#progress h3 {
+  width: 402px;
+}
+
+#progress h4 {
+  clear: left;
+}
+
+#progress li span.progress {
+  float: left;
+  z-index: -1;
 }

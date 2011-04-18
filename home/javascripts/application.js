@@ -129,7 +129,7 @@ $(document).ready(function() {
   }
 
   set_progress(70, 0);
-  set_progress(100, 1);
+  set_progress(90, 1);
   set_progress(10, 2);
   set_progress(20, 3);
 
