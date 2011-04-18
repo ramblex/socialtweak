@@ -2,8 +2,34 @@
 
 $(document).ready(function() {
 
+  var background_name = 'white';
+
+  function load_background(name)
+  {
+    if (name === 'white') {
+      $('body').css('background-image', 'none');
+    } else {
+      $('body').css('background-image', 'url(/images/backgrounds/'+name+'.png)');
+    }
+  }
+
   // Javascript that affects #content
   function init_content(page) {
+
+    if (page === 'rewards' || page.substring(0, 6) === 'redeem') {
+      load_background('white');
+      $('#choose-background a, #right-open-footer li:eq(2)').hide();
+    } else {
+      load_background(background_name);
+      // Background chooser
+      $('#choose-background a, #right-open-footer li:eq(2)').show();
+      $("#choose-background a").click(function(e) {
+        background_name = $(this).attr('id');
+        load_background(background_name);
+        e.preventDefault();
+      });
+    }
+
     $("#nav a, #thumbnails a, #rewards a").click(function(e) {
       var url = $(this).attr('href');
       url = url.replace(/^\//, '');
@@ -139,15 +165,5 @@ $(document).ready(function() {
     $(this).unbind('click');
   });
 
-  // Background chooser
-  $("#choose-background a").click(function(e) {
-    var name = $(this).attr('id');
-    var options = "";
-    if (name == "white") {
-      options += " no-repeat";
-    }
-    $('body').css('background-image', 'url(/images/backgrounds/'+name+'.png)' + options);
-    e.preventDefault();
-  });
 
 });
