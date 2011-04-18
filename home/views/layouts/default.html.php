@@ -40,7 +40,57 @@
           <li>-</li>
           <li><a href="#">terms</a></li>
         </ul>
-        <div id="points">521 <span>points</span></div>
+        <a id="points" href="/points">521 <span>points</span></a>
+        <div id="progress">
+          <h3>
+            Interact and make progress on your bars. Fill them to get points.
+            The more bars you have, the more points you earn
+          </h3>
+          <ul>
+            <li>
+              <h4>
+                Standard Bar
+                <p>Permanent</p>
+              </h4>
+              <span></span>
+            </li>
+            <li>
+              <h4>
+                Standard Bar
+                <p>Permanent</p>
+              </h4>
+              <span></span>
+            </li>
+            <li>
+              <h4>
+                Standard Bar
+                <p>Permanent</p>
+              </h4>
+              <span></span>
+            </li>
+            <li>
+              <h4>
+                Buy for $2.99 USD
+                <p>Duration: 1 month</p>
+              </h4>
+              <span></span>
+            </li>
+            <li>
+              <h4>
+                Make 20 facebook friends register to unlock
+                <p>Duration: 3 months</p>
+              </h4>
+              <span></span>
+            </li>
+            <li>
+              <h4>
+                Make 20 facebook friends register to unlock
+                <p>Duration: 3 months</p>
+              </h4>
+              <span></span>
+            </li>
+          </ul> <!-- end progress bars -->
+        </div> <!-- end progress -->
         <a href="#" id="settings">Settings</a>
       </div> <!-- end closed-footer -->
       <div id="open-footer">
@@ -50,11 +100,6 @@
           <input type="button" value="Tweet" class="tweet-button" />
         </form>
         <div id="right-open-footer">
-          <div id="progress">
-            <div class="progress-bar">Unlock</div>
-            <div class="progress-bar"><div id="current-progress"></div></div>
-            <p>Watch, listen, tweet, post and play to make more progress and get points!</p>
-          </div>
           <ul>
             <li><a href="#">Account</a></li>
             <li><a href="#">Logout</a></li>

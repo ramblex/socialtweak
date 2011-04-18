@@ -22,6 +22,9 @@ $(document).ready(function() {
       $('nav a[href="/'+page+'"]').addClass('selected');
     }
 
+    // Move progress to the correct position
+    $('#progress').css('top', '-'+($('#progress').height() + 50)+'px');
+
     // Countdown clock
     if ($("#counter").length != 0) {
       setInterval(function countDown() {
@@ -113,13 +116,22 @@ $(document).ready(function() {
     e.preventDefault();
   });
 
+  $('#points').click(function(e) {
+    $('#progress').fadeToggle('fast');
+    e.preventDefault();
+  });
+
   // Progress bar
-  function set_progress(percentage) {
-    var total_width = 185;
-    $("#current-progress").width((percentage / 100) * total_width);
+  function set_progress(percentage, idx) {
+    var total_width = $('#progress ul li:first').width();
+    var list_item = $("#progress ul li").get(idx);
+    $('span', list_item).width((percentage / 100) * total_width);
   }
 
-  set_progress(70);
+  set_progress(70, 0);
+  set_progress(100, 1);
+  set_progress(10, 2);
+  set_progress(20, 3);
 
   // Default text
   $('#quick-post-content').val('Enter text...').click(function() {
