@@ -125,7 +125,7 @@ $(document).ready(function() {
   function set_progress(percentage, idx) {
     var total_width = $('#progress ul li:first').width();
     var list_item = $("#progress ul li").get(idx);
-    $('span', list_item).width((percentage / 100) * total_width);
+    $('.progress', list_item).width((percentage / 100) * total_width);
   }
 
   set_progress(70, 0);

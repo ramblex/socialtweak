@@ -49,45 +49,33 @@
           <ul>
             <li>
               <h4>
-                Standard Bar
-                <p>Permanent</p>
+                Standard Bar <span>Permanent</span>
               </h4>
-              <span></span>
+              <span class="progress"></span>
             </li>
             <li>
               <h4>
-                Standard Bar
-                <p>Permanent</p>
+                Standard Bar <span>Permanent</span>
               </h4>
-              <span></span>
+              <span class="progress"></span>
             </li>
             <li>
               <h4>
-                Standard Bar
-                <p>Permanent</p>
+                Standard Bar <span>Permanent</span>
               </h4>
-              <span></span>
+              <span class="progress"></span>
             </li>
             <li>
               <h4>
-                Buy for $2.99 USD
-                <p>Duration: 1 month</p>
+                Buy for $2.99 USD <span>Duration: 1 month</span>
               </h4>
-              <span></span>
+              <span class="progress"></span>
             </li>
             <li>
               <h4>
-                Make 20 facebook friends register to unlock
-                <p>Duration: 3 months</p>
+                Make 20 facebook friends register to unlock <span>Duration: 3 months</span>
               </h4>
-              <span></span>
-            </li>
-            <li>
-              <h4>
-                Make 20 facebook friends register to unlock
-                <p>Duration: 3 months</p>
-              </h4>
-              <span></span>
+              <span class="progress"></span>
             </li>
           </ul> <!-- end progress bars -->
         </div> <!-- end progress -->
