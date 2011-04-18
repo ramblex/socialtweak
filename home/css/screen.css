@@ -741,6 +741,7 @@ footer a {
   letter-spacing: -0.5px;
   right: 20px;
   margin: 50px 0;
+  display: none;
 }
 
 #progress h3 {
@@ -759,7 +760,6 @@ footer a {
   padding: 0 0 30px 25px;
   text-align: center;
   background: url(/images/progress.png) no-repeat bottom;
-  display: none;
 }
 
 #progress ul li {
