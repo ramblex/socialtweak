@@ -18,8 +18,8 @@ $(document).ready(function() {
 
     // Highlight the correct link
     if (page != '') {
-      $('nav a').removeClass('selected');
-      $('nav a[href="/'+page+'"]').addClass('selected');
+      $('#nav a').removeClass('selected');
+      $('#nav a[href="/'+page+'"]').addClass('selected');
     }
 
     // Move progress to the correct position
