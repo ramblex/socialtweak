@@ -176,6 +176,52 @@ h1 {
   height: 135px;
 }
 
+#social-frame {
+  width: 942px;
+  margin: 0 auto;
+  background: url(/images/socialtabs.png) no-repeat top;
+}
+
+#social-frame .content {
+  width: 941px;
+  margin: 25px 0 0 1px;
+  background: url(/images/socialtabs-bg.png) repeat-y;
+}
+
+#social-frame #left-col {
+  width: 133px;
+  border: 0;
+  margin-top: -20px;
+}
+
+#social-frame #left-col .nav {
+  padding-left: 15px;
+}
+
+#social-frame #left-col .nav li {
+  list-style: none;
+  margin-bottom: 30px;
+  font-weight: 550;
+}
+
+#social-frame #left-col .nav li a {
+  color: white;
+  font-size: 18px;
+}
+
+#social-frame #right-col {
+  width: 775px;
+  margin: 0 17px -70px 6px;
+  padding: 5px;
+}
+
+#social-frame .footer {
+  clear: both;
+  height: 90px;
+  background: url(/images/socialtabs.png) no-repeat bottom;
+  margin: -10px 0 0 0;
+}
+
 #thumbnails {
   width: 990px;
   margin: 20px auto;

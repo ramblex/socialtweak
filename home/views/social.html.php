@@ -11,19 +11,31 @@
   </form>
 </div> <!-- end social-profile -->
 
-<div id="slidedeck">
-  <dl>
-    <dt>Social</dt>
-    <dd>Social content</dd>
-
-    <dt>Facebook</dt>
-    <dd>Facebook content</dd>
-
-    <dt>Twitter</dt>
-    <dd>
-    </dd>
-
-    <dt>Invite</dt>
-    <dd>Invite content</dd>
-  </dl>
-</div> <!-- end slidedeck -->
+<div id="social-frame">
+  <div class="content clearfix">
+    <div id="left-col">
+      <ul class="nav">
+        <li><a href="#">Timeline</a></li>
+        <li><a href="#">Mentions</a></li>
+        <li><a href="#">Lists</a></li>
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">Featured</a></li>
+      </ul>
+    </div> <!-- end left-col -->
+    <div id="right-col">
+      <h2>Title</h2>
+      <p>Hello, this is some content</p>
+      <h2>Title</h2>
+      <p>Hello, this is some content</p>
+      <h2>Title</h2>
+      <p>Hello, this is some content</p>
+      <h2>Title</h2>
+      <p>Hello, this is some content</p>
+      <h2>Title</h2>
+      <p>Hello, this is some content</p>
+      <h2>Title</h2>
+      <p>Hello, this is some content</p>
+    </div> <!-- end right-col -->
+  </div> <!-- end content -->
+  <div class="footer"></div>
+</div> <!-- end frame -->
