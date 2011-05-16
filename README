@@ -3,4 +3,4 @@ SocialTweak
 
 This is the source code for socialtweak.com
 
-The home directory contains the main source code. It uses limonade (http://www.limonade-php.net).
+It uses CodeIgniter which can be found at codeigniter.com
