@@ -23,6 +23,27 @@
       $this->load->view('default_view', $data);
     }
     
+    function contact(){
+      $data = array(
+        'content' => 'NOT FOUND';
+      );
+      $this->load->view('default_view', $data);
+    }
+    
+    function about(){
+      $data = array(
+        'content' => 'NOT FOUND';
+      );
+      $this->load->view('default_view', $data);
+    }
+    
+    function terms(){
+      $data = array(
+        'content' => 'NOT FOUND';
+      );
+      $this->load->view('default_view', $data);
+    }
+    
     // Rewards functions
     
     $reward_list = array(
