@@ -2,9 +2,11 @@
 
   class Videos extends CI_Controller{
   
+    $content_dir = printf('%s\\content\\', getcwd());
+  
     function index(){
       $data = array(
-        'content' => file('/content/media.php');
+        'content' => file($content_dir. 'media.php');
         
         'featured_videos' => array(
           array('name' => 'video one featured'),

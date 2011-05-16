@@ -1,7 +1,7 @@
 <ul id="thumbnails">
-  <li><img src="images/thumb1.png" alt="Box 1 text" /></li>
-  <li><img src="images/thumb2.png" alt="Box 2 text" /></li>
-  <li><img src="images/thumb3.png" alt="Box 3 text" /></li>
+  <li><img src="http://socialtweak.ramblexdesigns.com/images/thumb1.png" alt="Box 1 text" /></li>
+  <li><img src="http://socialtweak.ramblexdesigns.com/images/thumb2.png" alt="Box 2 text" /></li>
+  <li><img src="http://socialtweak.ramblexdesigns.com/images/thumb3.png" alt="Box 3 text" /></li>
 </ul>
 
 <div id="slidedeck">

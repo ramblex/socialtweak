@@ -1,7 +1,7 @@
 <ul id="thumbnails">
-  <li><a href="/videos"><img src="images/entertainment/thumb1.png" alt="Videos - Click here to start watching" /></a></li>
-  <li><a href="#"><img src="images/entertainment/thumb2.png" alt="Music - Click here to start listening" /></a></li>
-  <li><a href="/games"><img src="images/entertainment/thumb3.png" alt="Games - Click here to start playing" /></a></li>
+  <li><a href="/videos"><img src="http://socialtweak.ramblexdesigns.com/images/entertainment/thumb1.png" alt="Videos - Click here to start watching" /></a></li>
+  <li><a href="#"><img src="http://socialtweak.ramblexdesigns.com/images/entertainment/thumb2.png" alt="Music - Click here to start listening" /></a></li>
+  <li><a href="/games"><img src="http://socialtweak.ramblexdesigns.com/images/entertainment/thumb3.png" alt="Games - Click here to start playing" /></a></li>
 </ul>
 
 <div id="slidedeck">

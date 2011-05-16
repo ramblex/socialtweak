@@ -2,9 +2,11 @@
 
   class Games extends CI_Controller{
   
+    $content_dir = printf('%s\\content\\', getcwd());
+  
     function index(){
       $data = array(
-        'content' => file('/content/games.php');
+        'content' => file($content_dir. 'games.php');
         
         'featured_games' => array(
           array('name' => 'Game one featured'),

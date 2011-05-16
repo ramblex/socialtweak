@@ -90,9 +90,9 @@
             <li><a href="http://socialtweak.ramblexdesigns.com/logout">Logout</a></li>
             <li>Choose a background:</li>
             <li id="choose-background">
-              <a href="#" id="grass"><img src="/images/select-grass.png" alt="Grass background" /></a>
-              <a href="#" id="water"><img src="/images/select-water.png" alt="Water background" /></a>
-              <a href="#" id="wood"><img src="/images/select-wood.png" alt="Wood background" /></a>
+              <a href="#" id="grass"><img src="http://socialtweak.ramblexdesigns.com/images/select-grass.png" alt="Grass background" /></a>
+              <a href="#" id="water"><img src="http://socialtweak.ramblexdesigns.com/images/select-water.png" alt="Water background" /></a>
+              <a href="#" id="wood"><img src="http://socialtweak.ramblexdesigns.com/images/select-wood.png" alt="Wood background" /></a>
             </li>
           </ul>
         </div> <!-- end right-open-footer -->
