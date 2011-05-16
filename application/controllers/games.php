@@ -2,8 +2,8 @@
 
   class Games extends CI_Controller{
   
-    $content_dir = printf('%s\\content\\', getcwd());
-  
+    $content_dir = '/home/alexd/public_html/socialtweak/content/';
+    
     function index(){
       $data = array(
         'content' => file($content_dir. 'games.php');
