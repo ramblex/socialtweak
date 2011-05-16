@@ -28,7 +28,11 @@
     </header>
 
     <div id="content">
-      <?php echo $content ?>
+      <?php 
+        foreach($content as $line)
+          echo $line;
+        }
+      ?>
     </div> <!-- end content -->
 
     <footer>
