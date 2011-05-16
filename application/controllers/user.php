@@ -7,12 +7,12 @@
     }
   
     function index(){
-      header("Location: /home");
+      header("Location: http://socialtweak.ramblexdesigns.com/home");
     }
     
     function login(){
-      $user = $_POST['user'];
-      $pass = $_POST['pass'];
+      $user = $_POST['socialname'];
+      $pass = $_POST['password'];
       
       $users = $this->db->get('users');
       
@@ -21,11 +21,12 @@
         $db_pass = $user->password;
         
         if($user == $db_user && $pass == $db_pass){
-          setcookie('',$user,time()+3600,/,/,true)
+          setcookie('user', $user, time()+3600)
           break;
+          header("Location: http://socialtweak.ramblexdesigns.com/home");
         }
         else{
-          header("Location: /home");
+          header("Location: http://socialtweak.ramblexdesigns.com/sign-in");
         }
         
       }
@@ -33,15 +34,25 @@
     }
     
     function logout(){
-      header("Location: /home");
+      header("Location: http://socialtweak.ramblexdesigns.com/home");
     }
     
-    function signup(){
-      header("Location: /home");
+    // Page functions
+    
+    function sign-in(){
+      header("Location: http://socialtweak.ramblexdesigns.com/home");
+    }
+    
+    function sign-up(){
+      header("Location: http://socialtweak.ramblexdesigns.com/home");
+    }
+    
+    function forgot(){
+      header("Location: http://socialtweak.ramblexdesigns.com/home");
     }
     
     function invite(){
-      header("Location: /home");
+      header("Location: http://socialtweak.ramblexdesigns.com/home");
     }
   
   }

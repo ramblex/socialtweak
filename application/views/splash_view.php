@@ -3,12 +3,12 @@
   <head>
     <title>SocialTweak</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <link href="/css/splash.css" rel="stylesheet" type="text/css" />
+    <link href="http://socialtweak.ramblexdesigns.com/css/splash.css" rel="stylesheet" type="text/css" />
     <!--[if IE 7]>
       <link href="/css/splash-ie7.css" rel="stylesheet" type="text/css" />
     <![endif]-->
-    <script type="text/javascript" src="/javascripts/jquery.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery.roundabout.min.js"></script>
+    <script type="text/javascript" src="http://socialtweak.ramblexdesigns.com/javascripts/jquery.js"></script>
+    <script type="text/javascript" src="http://socialtweak.ramblexdesigns.com/javascripts/jquery.roundabout.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
 
@@ -68,24 +68,24 @@
   <body>
     <div id="container">
       <div id="header">
-        <a href="/">
+        <a href="http://socialtweak.com/">
           <h1>SocialTweak</h1>
         </a>
-        <form action="/sign_in" method="post">
+        <form action="http://socialtweak.ramblexdesigns.com/login" method="post">
           <p>
             <label for="user-socialname">Socialname:</label>
-            <input type="text" name="user[socialname]" id="user-socialname" />
+            <input type="text" name="socialname" id="user-socialname" />
           </p>
           <p>
             <label for="user-password">Password:</label>
-            <input type="password" name="user[password]" id="user-password" />
+            <input type="password" name="password" id="user-password" />
           </p>
           <p>
             <input type="submit" value="LOGIN" id="login-btn" />
           </p>
           <div id="form-links">
-            <span><a href="#">Forgot your password?</a></span>
-            <span><a href="#">Not a member yet?</a></span>
+            <span><a href="http://socialtweak.ramblexdesigns.com/forgot">Forgot your password?</a></span>
+            <span><a href="http://socialtweak.ramblexdesigns.com/sign-up">Not a member yet?</a></span>
           </div>
         </form>
       </div> <!-- end header -->
@@ -94,11 +94,11 @@
         <h2>Getting social, in a whole new way</h2>
         <div id="roundabout">
           <ul>
-            <li><img src="/images/splash/slides/1wel.jpg" alt="Welcome" width="524" height="318" /></li>
-            <li><img src="/images/splash/slides/2gamesslide.jpg" alt="Games" width="524" height="318" /></li>
-            <li><img src="/images/splash/slides/3videoslide.jpg" alt="Videos" width="524" height="318" /></li>
-            <li><img src="/images/splash/slides/4musicslide.jpg" alt="Music" width="524" height="318" /></li>
-            <li><img src="/images/splash/slides/5auctions.jpg" alt="Auctions" width="524" height="318" /></li>
+            <li><img src="http://socialtweak.ramblexdesigns.com/images/splash/slides/1wel.jpg" alt="Welcome" width="524" height="318" /></li>
+            <li><img src="http://socialtweak.ramblexdesigns.com/images/splash/slides/2gamesslide.jpg" alt="Games" width="524" height="318" /></li>
+            <li><img src="http://socialtweak.ramblexdesigns.com/images/splash/slides/3videoslide.jpg" alt="Videos" width="524" height="318" /></li>
+            <li><img src="http://socialtweak.ramblexdesigns.com/images/splash/slides/4musicslide.jpg" alt="Music" width="524" height="318" /></li>
+            <li><img src="http://socialtweak.ramblexdesigns.com/images/splash/slides/5auctions.jpg" alt="Auctions" width="524" height="318" /></li>
           </ul>
         </div> <!-- end roundabout -->
         <div id="dots"></div>
@@ -115,18 +115,18 @@
         <div class="section" id="social">
           <h3>We're social too!</h3>
           <a href="#" id="facebook">Facebook</a>
-          <a href="#" id="twitter">Twitter</a>
+          <a href="http://twitter.com/socialtweak" id="twitter">Twitter</a>
         </div> <!-- end section -->
         <div class="section">
           <h3>Get inside!</h3>
           <p>Our members will be happy to invite you!</p>
-          <p><a href="#">Click here</a> and request an invite</p>
+          <p><a href="http://socialtweak.ramblexdesigns.com/invite">Click here</a> and request an invite</p>
         </div> <!-- end section -->
         <div class="section" id="misc">
           <ul>
-            <li><a href="#">contact</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">terms</a></li>
+            <li><a href="http://socialtweak.ramblexdesigns.com/home/contact">contact</a></li>
+            <li><a href="http://socialtweak.ramblexdesigns.com/home/about">about</a></li>
+            <li><a href="http://socialtweak.ramblexdesigns.com/home/terms">terms</a></li>
           </ul>
         </div> <!-- end section -->
       </div> <!-- end footer content -->

@@ -4,21 +4,21 @@
   
     function index(){
       $data = array(
-        'content' => file('/content/index.php');
+        'content' => file('http://socialtweak.ramblexdesigns.com/content/index.php');
       );
       $this->load->view('default_view', $data);
     }
     
     function social(){
       $data = array(
-        'content' => file('/content/social.php');
+        'content' => file('http://socialtweak.ramblexdesigns.com/content/social.php');
       );
       $this->load->view('default_view', $data);
     }
     
     function entertainment(){
       $data = array(
-        'content' => file('/content/entertainment.php');
+        'content' => file('http://socialtweak.ramblexdesigns.com/content/entertainment.php');
       );
       $this->load->view('default_view', $data);
     }
@@ -53,7 +53,7 @@
       
     function rewards(){
       $data = array(
-        'content' => file('/content/rewards.php');
+        'content' => file('http://socialtweak.ramblexdesigns.com/content/rewards.php');
         'reward_list' => $reward_list;
       );
       $this->load->view('default_view', $data);
@@ -61,7 +61,7 @@
     
     function redeem(){
       $data = array(
-        'content' => file('/content/redeem.php');
+        'content' => file('http://socialtweak.ramblexdesigns.com/content/redeem.php');
         'reward_list' => $reward_list;
       );
       $this->load->view('default_view', $data);

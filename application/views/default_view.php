@@ -1,35 +1,34 @@
-<!doctype html>
 <html>
   <head>
     <title>SocialTweak</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <link href="/css/screen.css" rel="stylesheet" type="text/css" />
+    <link href="http://socialtweak.ramblexdesigns.com/css/screen.css" rel="stylesheet" type="text/css" />
     <!--[if IE 7]>
       <link href="/css/ie7.css" rel="stylesheet" type="text/css" />
     <![endif]-->
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="/javascripts/jquery.js"></script>
-    <script type="text/javascript" src="/javascripts/slidedeck.jquery.lite.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery.history.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery.path.js"></script>
-    <script type="text/javascript" src="/javascripts/application.js"></script>
+    <script type="text/javascript" src="http://socialtweak.ramblexdesigns.com/javascripts/jquery.js"></script>
+    <script type="text/javascript" src="http://socialtweak.ramblexdesigns.com/javascripts/slidedeck.jquery.lite.js"></script>
+    <script type="text/javascript" src="http://socialtweak.ramblexdesigns.com/javascripts/jquery.history.js"></script>
+    <script type="text/javascript" src="http://socialtweak.ramblexdesigns.com/javascripts/jquery.path.js"></script>
+    <script type="text/javascript" src="http://socialtweak.ramblexdesigns.com/javascripts/application.js"></script>
   </head>
   <body>
     <header>
-      <a href="/"><h1>SocialTweak</h1></a>
+      <a href="http://socialtweak.ramblexdesigns.com/"><h1>SocialTweak</h1></a>
       <ul id="nav">
-        <li><a href="/home" class="selected">Home</a></li>
-        <li><a href="/home/social">Social</a></li>
-        <li><a href="/home/entertainment">Entertainment</a></li>
-        <li><a href="/home/rewards">Rewards</a></li>
+        <li><a href="http://socialtweak.ramblexdesigns.com/home" class="selected">Home</a></li>
+        <li><a href="http://socialtweak.ramblexdesigns.com/home/social">Social</a></li>
+        <li><a href="http://socialtweak.ramblexdesigns.com/home/entertainment">Entertainment</a></li>
+        <li><a href="http://socialtweak.ramblexdesigns.com/home/rewards">Rewards</a></li>
       </ul>
     </header>
 
     <div id="content">
       <?php 
-        foreach($content as $line)
+        foreach($content as $line){
           echo $line;
         }
       ?>
@@ -38,11 +37,11 @@
     <footer>
       <div id="closed-footer">
         <ul>
-          <li><a href="#">contact</a></li>
+          <li><a href="http://socialtweak.ramblexdesigns.com/home/contact">contact</a></li>
           <li>-</li>
-          <li><a href="#">about</a></li>
+          <li><a href="http://socialtweak.ramblexdesigns.com/home/about">about</a></li>
           <li>-</li>
-          <li><a href="#">terms</a></li>
+          <li><a href="http://socialtweak.ramblexdesigns.com/home/terms">terms</a></li>
         </ul>
         <a id="points" href="/points">521 <span>points</span></a>
         <div id="progress">
@@ -88,7 +87,7 @@
         <div id="right-open-footer">
           <ul>
             <li><a href="#">Account</a></li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="http://socialtweak.ramblexdesigns.com/logout">Logout</a></li>
             <li>Choose a background:</li>
             <li id="choose-background">
               <a href="#" id="grass"><img src="/images/select-grass.png" alt="Grass background" /></a>
